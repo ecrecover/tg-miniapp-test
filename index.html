@@ -67,6 +67,9 @@
         <div align="center">
             <a href="https://ton.org/"><img width="48" src="./assets/tapps.png" alt="logo of telegram web apps"></a>
         </div>
+        <h1>WebAuthn</h1>
+<button onclick="webauthnCreate()">Test WebAuthn Create</button>
+<button onclick="webauthnGet()">Test WebAuthn Get</button>
         <h1>Modals</h1>
         <button onclick="Telegram.WebApp.showAlert('Hello World!');">Launch Alert</button>
         <button onclick="showPopup();">Launch Popup</button>
@@ -152,6 +155,46 @@
         Telegram.WebApp.onEvent('themeChanged', function() {
             document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
         });
+
+
+        function webauthnCreate() {
+    navigator.credentials.create({
+        publicKey: {
+            challenge: new Uint8Array(32),
+            rp: { name: "Example Corp" },
+            user: {
+                id: new Uint8Array(16),
+                name: "user@example.com",
+                displayName: "User Name"
+            },
+            pubKeyCredParams: [{ alg: -7, type: "public-key" }]
+        }
+    }).then(credential => {
+        console.log("Credential created:", credential);
+        alert("WebAuthn create method was successful!");
+    }).catch(err => {
+        console.error("Error during WebAuthn create:", err);
+        alert("WebAuthn create method failed: " + err);
+    });
+}
+
+function webauthnGet() {
+    navigator.credentials.get({
+        publicKey: {
+            challenge: new Uint8Array(32),
+            allowCredentials: [{
+                id: new Uint8Array(16),
+                type: "public-key"
+            }]
+        }
+    }).then(credential => {
+        console.log("Credential retrieved:", credential);
+        alert("WebAuthn get method was successful!");
+    }).catch(err => {
+        console.error("Error during WebAuthn get:", err);
+        alert("WebAuthn get method failed: " + err);
+    });
+}
 
     </script>
 
