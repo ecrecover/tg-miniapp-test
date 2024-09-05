@@ -1,349 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>OKX Telegram Mini Apps Test App</title>
     <style>
-      body {
-        --bg-color: var(--tg-theme-bg-color);
-        font: 12px/18px 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica,
-          Verdana, sans-serif;
-        background-color: var(--bg-color);
-        color: var(--tg-theme-text-color);
-        margin: 48px 24px;
-        padding: 2px;
-        color-scheme: var(--tg-color-scheme);
-      }
+        body {
+            --bg-color: var(--tg-theme-bg-color);
+            font: 12px/18px 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--tg-theme-text-color);
+            margin: 48px 24px;
+            padding: 2px;
+            color-scheme: var(--tg-color-scheme);
+        }
 
-      a {
-        color: var(--tg-theme-link-color);
-      }
-      #viewport {
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        height: var(--tg-viewport-stable-height, 100vh);
-        pointer-events: none;
-        transition: all 0.2s ease;
-      }
-      #viewport:after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        border-width: 4px;
-        border-style: solid;
-        border-image: linear-gradient(
-            45deg,
-            rgba(64, 224, 208, 0.5),
-            rgba(173, 255, 47, 0.5)
-          )
-          1;
-      }
+        a {
+            color: var(--tg-theme-link-color);
+        }
+        #viewport {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: var(--tg-viewport-stable-height, 100vh);
+            pointer-events: none;
+            transition: all 0.2s ease;
+        }
+        #viewport:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-width: 4px;
+            border-style: solid;
+            border-image: linear-gradient(45deg, rgba(64, 224, 208, 0.5), rgba(173, 255, 47, 0.5)) 1;
+        }
 
-      #viewport-params-size,
-      #viewport-params-expand {
-        content: attr(text);
-        position: absolute;
-        display: inline-block;
-        background: var(--tg-theme-link-color, rgb(64, 224, 208));
-        right: 4px;
-        left: auto;
-        font-size: 8px;
-        padding: 4px;
-        vertical-align: top;
-      }
-      #viewport-params-size {
-        top: 4px;
-      }
-      #viewport-params-expand {
-        top: 30px;
-      }
+        #viewport-params-size,
+        #viewport-params-expand {
+            content: attr(text);
+            position: absolute;
+            display: inline-block;
+            background: var(--tg-theme-link-color, rgb(64, 224, 208));
+            right: 4px;
+            left: auto;
+            font-size: 8px;
+            padding: 4px;
+            vertical-align: top;
+        }
+        #viewport-params-size {
+            top: 4px;
+        }
+        #viewport-params-expand {
+            top: 30px;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <main>
-      <div align="center">
-        <a href="https://okx.com/"
-          ><img
-            width="48"
-            src="./assets/okx.jpeg"
-            alt="logo of okx"
-        /></a>
-      </div>
-      <h1>WebAuthn</h1>
-      <button onclick="webauthnCreate()">Test WebAuthn Create</button>
-      <button onclick="webauthnGet()">Test WebAuthn Get</button>
+        <div align="center">
+            <a href="https://okx.com/"><img width="48" src="./assets/okx.jpeg" alt="logo of okx" /></a>
+        </div>
+        <h1>WebAuthn</h1>
+        <button onclick="webauthnCreate()">Test WebAuthn Create</button>
+        <button onclick="webauthnGet()">Test WebAuthn Get</button>
 
-      <h1>IndexedDB Support</h1>
-      <button onclick="checkIndexedDBSupport()">Check IndexedDB Support</button>
-            <button onclick="checkIndexedDBCapabilities()">Check IndexedDB Capabilities</button>
+        <h1>IndexedDB Support</h1>
+        <button onclick="checkIndexedDBSupport()">Check IndexedDB Support</button>
+        <button onclick="checkOpenDatabase()">Check Open Database</button>
+        <button onclick="checkCreateStore()">Check Create Store</button>
+        <button onclick="checkWriteData()">Check Write Data</button>
+        <button onclick="checkReadData()">Check Read Data</button>
 
-      <h1>Modals</h1>
-      <button onclick="Telegram.WebApp.showAlert('Hello World!');">
-        Launch Alert
-      </button>
-      <button onclick="showPopup();">Launch Popup</button>
+        <h1>Modals</h1>
+        <button onclick="Telegram.WebApp.showAlert('Hello World!');">Launch Alert</button>
+        <button onclick="showPopup();">Launch Popup</button>
 
-      <h1>Links</h1>
-      <ul>
-        <li>
-          <a
-            href="javascript:Telegram.WebApp.openTelegramLink('https://t.me/trendingapps');"
-            >Open link within Telegram</a
-          >
-        </li>
-        <li>
-          <a href="javascript:Telegram.WebApp.openLink('https://ton.org/');"
-            >Open link in external browser</a
-          >
-        </li>
-        <li>
-          <a
-            href="javascript:Telegram.WebApp.openLink('https://telegra.ph/api',{try_instant_view:true});"
-            >Open link inside Telegram webview</a
-          >
-        </li>
-      </ul>
+        <h1>Links</h1>
+        <ul>
+            <li>
+                <a href="javascript:Telegram.WebApp.openTelegramLink('https://t.me/trendingapps');">Open link within Telegram</a>
+            </li>
+            <li>
+                <a href="javascript:Telegram.WebApp.openLink('https://ton.org/');">Open link in external browser</a>
+            </li>
+            <li>
+                <a href="javascript:Telegram.WebApp.openLink('https://telegra.ph/api',{try_instant_view:true});">Open link inside Telegram webview</a>
+            </li>
+        </ul>
 
-      <h1>Buttons</h1>
-      <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
-      <button onclick="toggleMainButton();">Toggle Main Button</button>
+        <h1>Buttons</h1>
+        <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
+        <button onclick="toggleMainButton();">Toggle Main Button</button>
     </main>
     <div id="viewport"></div>
     <div id="viewport-params-size"></div>
     <div id="viewport-params-expand"></div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
-      // Init TWA
-      Telegram.WebApp.ready()
+        // Init TWA
+        Telegram.WebApp.ready();
 
-      // Event occurs whenever theme settings are changed in the user's Telegram app (including switching to night mode).
-      Telegram.WebApp.onEvent('themeChanged', function () {
-        document.documentElement.className = Telegram.WebApp.colorScheme
-      })
+        // Event occurs whenever theme settings are changed in the user's Telegram app (including switching to night mode).
+        Telegram.WebApp.onEvent('themeChanged', function () {
+            document.documentElement.className = Telegram.WebApp.colorScheme;
+        });
 
-      // Show main button
-      Telegram.WebApp.MainButton.setParams({
-        text: 'Main Button',
-      })
-      Telegram.WebApp.MainButton.onClick(function () {
-        Telegram.WebApp.showAlert('Main Button was clicked')
-      })
-      Telegram.WebApp.MainButton.show()
+        // Show main button
+        Telegram.WebApp.MainButton.setParams({
+            text: 'Main Button',
+        });
+        Telegram.WebApp.MainButton.onClick(function () {
+            Telegram.WebApp.showAlert('Main Button was clicked');
+        });
+        Telegram.WebApp.MainButton.show();
 
-      // 检查 IndexedDB 支持
-      function checkIndexedDBSupport() {
-        if (!window.indexedDB) {
-          Telegram.WebApp.showAlert(
-            'IndexedDB is not supported in this environment.'
-          )
-        } else {
-          Telegram.WebApp.showAlert('IndexedDB is supported!')
-        }
-      }
-
-      async function checkIndexedDBCapabilities() {
-  const result = {
-    openDatabase: false,
-    createStore: false,
-    writeData: false,
-    readData: false,
-  };
-  const dbName = `testDB_${Math.floor(Math.random() * 100000).toString()}`;
-  try {
-    const storeName = 'testStore';
-
-    // 尝试打开数据库
-    const dbRequest = indexedDB.open(dbName, 1);
-
-    dbRequest.onupgradeneeded = (event) => {
-      const db = event.target.result;
-      // 尝试创建对象存储
-      if (!db.objectStoreNames.contains(storeName)) {
-        db.createObjectStore(storeName, { keyPath: 'id', autoIncrement: true });
-        result.createStore = true;
-      }
-    };
-
-    const db = await new Promise((resolve, reject) => {
-      dbRequest.onsuccess = () => {
-        return resolve(dbRequest.result);
-      };
-      dbRequest.onerror = () => {
-        return reject(dbRequest.error);
-      };
-    });
-
-    result.openDatabase = true;
-
-    // 尝试写入数据
-    const transaction = db.transaction([storeName], 'readwrite');
-    const store = transaction.objectStore(storeName);
-    const writeRequest = store.add({ data: 'test' });
-    await new Promise((resolve, reject) => {
-      writeRequest.onsuccess = () => {
-        return resolve();
-      };
-      writeRequest.onerror = () => {
-        return reject(writeRequest.error);
-      };
-    });
-
-    result.writeData = true;
-
-    // 尝试读取数据
-    const readRequest = store.get(1);
-    await new Promise((resolve, reject) => {
-      readRequest.onsuccess = () => {
-        return resolve();
-      };
-      readRequest.onerror = () => {
-        return reject(readRequest.error);
-      };
-    });
-
-    result.readData = true;
-    db.close();
-  } catch (error) {
-    console.error('IndexedDB check failed:', error);
-  } finally {
-    indexedDB
-      .databases()
-      .then((dbs) => {
-        if (
-          dbs.find((db) => {
-            return db.name === dbName;
-          })
-        ) {
-          indexedDB.deleteDatabase(dbName);
-        }
-      })
-      .catch((e) => {
-        console.error('deleteDatabase failed:', e);
-      });
-  }
-
-  return result;
-}
-
-
-      // Function to call showPopup API
-      function showPopup() {
-        Telegram.WebApp.showPopup(
-          {
-            title: 'Title',
-            message: 'Some message',
-            buttons: [
-              { id: 'link', type: 'default', text: 'Open ton.org' },
-              { type: 'cancel' },
-            ],
-          },
-          function (btn) {
-            if (btn === 'link') {
-              Telegram.WebApp.openLink('https://ton.org/')
+        // 检查 IndexedDB 支持
+        function checkIndexedDBSupport() {
+            if (!window.indexedDB) {
+                Telegram.WebApp.showAlert('IndexedDB is not supported in this environment.');
+            } else {
+                Telegram.WebApp.showAlert('IndexedDB is supported!');
             }
-          }
-        )
-      }
-
-      // Function to toggle main TWA button
-      function toggleMainButton() {
-        if (Telegram.WebApp.MainButton.isVisible) {
-          Telegram.WebApp.MainButton.hide()
-        } else {
-          Telegram.WebApp.MainButton.show()
         }
-      }
 
-      function setViewportData() {
-        var sizeEl = document.getElementById('viewport-params-size')
-        sizeEl.innerText =
-          'width: ' +
-          window.innerWidth +
-          ' x ' +
-          'height: ' +
-          Telegram.WebApp.viewportStableHeight
+        async function checkOpenDatabase() {
+            const dbName = `testDB_${Math.floor(Math.random() * 100000).toString()}`;
+            const dbRequest = indexedDB.open(dbName, 1);
+            dbRequest.onsuccess = () => {
+                Telegram.WebApp.showAlert('Open Database: Success');
+                indexedDB.deleteDatabase(dbName); // 清理数据库
+            };
+            dbRequest.onerror = () => {
+                Telegram.WebApp.showAlert('Open Database: Failed');
+            };
+        }
 
-        var expandEl = document.querySelector('#viewport-params-expand')
-        expandEl.innerText =
-          'Is Expanded: ' + (Telegram.WebApp.isExpanded ? 'true' : 'false')
-      }
+        async function checkCreateStore() {
+            const dbName = `testDB_${Math.floor(Math.random() * 100000).toString()}`;
+            const storeName = 'testStore';
+            const dbRequest = indexedDB.open(dbName, 1);
+            dbRequest.onupgradeneeded = (event) => {
+                const db = event.target.result;
+                db.createObjectStore(storeName, { keyPath: 'id', autoIncrement: true });
+                Telegram.WebApp.showAlert('Create Store: Success');
+                db.close();
+                indexedDB.deleteDatabase(dbName); // 清理数据库
+            };
+            dbRequest.onerror = () => {
+                Telegram.WebApp.showAlert('Create Store: Failed');
+            };
+        }
 
-      Telegram.WebApp.setHeaderColor('secondary_bg_color')
+        async function checkWriteData() {
+            const dbName = `testDB_${Math.floor(Math.random() * 100000).toString()}`;
+            const storeName = 'testStore';
+            const dbRequest = indexedDB.open(dbName, 1);
+            dbRequest.onupgradeneeded = (event) => {
+                const db = event.target.result;
+                db.createObjectStore(storeName, { keyPath: 'id', autoIncrement: true });
+            };
+            const db = await new Promise((resolve, reject) => {
+                dbRequest.onsuccess = () => resolve(dbRequest.result);
+                dbRequest.onerror = () => reject(dbRequest.error);
+            });
 
-      setViewportData()
-      Telegram.WebApp.onEvent('viewportChanged', setViewportData)
+            const transaction = db.transaction([storeName], 'readwrite');
+            const store = transaction.objectStore(storeName);
+            const writeRequest = store.add({ data: 'test' });
+            writeRequest.onsuccess = () => {
+                Telegram.WebApp.showAlert('Write Data: Success');
+                db.close();
+                indexedDB.deleteDatabase(dbName); // 清理数据库
+            };
+            writeRequest.onerror = () => {
+                Telegram.WebApp.showAlert('Write Data: Failed');
+            };
+        }
 
-      Telegram.WebApp.onEvent('themeChanged', function () {
-        document.body.setAttribute(
-          'style',
-          '--bg-color:' + Telegram.WebApp.backgroundColor
-        )
-      })
+        async function checkReadData() {
+            const dbName = `testDB_${Math.floor(Math.random() * 100000).toString()}`;
+            const storeName = 'testStore';
+            const dbRequest = indexedDB.open(dbName, 1);
+            dbRequest.onupgradeneeded = (event) => {
+                const db = event.target.result;
+                db.createObjectStore(storeName, { keyPath: 'id', autoIncrement: true });
+            };
+            const db = await new Promise((resolve, reject) => {
+                dbRequest.onsuccess = () => resolve(dbRequest.result);
+                dbRequest.onerror = () => reject(dbRequest.error);
+            });
 
-      function webauthnCreate() {
-        navigator.credentials
-          .create({
-            publicKey: {
-              challenge: new Uint8Array(32),
-              rp: { name: 'Example Corp' },
-              user: {
-                id: new Uint8Array(16),
-                name: 'user@example.com',
-                displayName: 'User Name',
-              },
-              pubKeyCredParams: [{ alg: -7, type: 'public-key' }],
-            },
-          })
-          .then((credential) => {
-            console.log('Credential created:', credential)
-            alert('WebAuthn create method was successful!')
-          })
-          .catch((err) => {
-            console.error('Error during WebAuthn create:', err)
-            alert('WebAuthn create method failed: ' + err)
-          })
-      }
+            const transaction = db.transaction([storeName], 'readwrite');
+            const store = transaction.objectStore(storeName);
+            store.add({ id: 1, data: 'test' }); // 先写入数据
+            const readRequest = store.get(1);
+            readRequest.onsuccess = () => {
+                Telegram.WebApp.showAlert('Read Data: Success');
+                db.close();
+                indexedDB.deleteDatabase(dbName); // 清理数据库
+            };
+            readRequest.onerror = () => {
+                Telegram.WebApp.showAlert('Read Data: Failed');
+            };
+        }
 
-      function webauthnGet() {
-        navigator.credentials
-          .get({
-            publicKey: {
-              challenge: new Uint8Array(32),
-              allowCredentials: [
+        // Function to call showPopup API
+        function showPopup() {
+            Telegram.WebApp.showPopup(
                 {
-                  id: new Uint8Array(16),
-                  type: 'public-key',
+                    title: 'Title',
+                    message: 'Some message',
+                    buttons: [
+                        { id: 'link', type: 'default', text: 'Open ton.org' },
+                        { type: 'cancel' },
+                    ],
                 },
-              ],
-            },
-          })
-          .then((credential) => {
-            console.log('Credential retrieved:', credential)
-            alert('WebAuthn get method was successful!')
-          })
-          .catch((err) => {
-            console.error('Error during WebAuthn get:', err)
-            alert('WebAuthn get method failed: ' + err)
-          })
-      }
+                function (btn) {
+                    if (btn === 'link') {
+                        Telegram.WebApp.openLink('https://ton.org/');
+                    }
+                }
+            );
+        }
+
+        // Function to toggle main TWA button
+        function toggleMainButton() {
+            if (Telegram.WebApp.MainButton.isVisible) {
+                Telegram.WebApp.MainButton.hide();
+            } else {
+                Telegram.WebApp.MainButton.show();
+            }
+        }
+
+        function setViewportData() {
+            var sizeEl = document.getElementById('viewport-params-size');
+            sizeEl.innerText = 'width: ' + window.innerWidth + ' x ' + 'height: ' + Telegram.WebApp.viewportStableHeight;
+
+            var expandEl = document.querySelector('#viewport-params-expand');
+            expandEl.innerText = 'Is Expanded: ' + (Telegram.WebApp.isExpanded ? 'true' : 'false');
+        }
+
+        Telegram.WebApp.setHeaderColor('secondary_bg_color');
+
+        setViewportData();
+        Telegram.WebApp.onEvent('viewportChanged', setViewportData);
+
+        Telegram.WebApp.onEvent('themeChanged', function () {
+            document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
+        });
+
+        function webauthnCreate() {
+            navigator.credentials
+                .create({
+                    publicKey: {
+                        challenge: new Uint8Array(32),
+                        rp: { name: 'Example Corp' },
+                        user: {
+                            id: new Uint8Array(16),
+                            name: 'user@example.com',
+                            displayName: 'User Name',
+                        },
+                        pubKeyCredParams: [{ alg: -7, type: 'public-key' }],
+                    },
+                })
+                .then((credential) => {
+                    console.log('Credential created:', credential);
+                    alert('WebAuthn create method was successful!');
+                })
+                .catch((err) => {
+                    console.error('Error during WebAuthn create:', err);
+                    alert('WebAuthn create method failed: ' + err);
+                });
+        }
+
+        function webauthnGet() {
+            navigator.credentials
+                .get({
+                    publicKey: {
+                        challenge: new Uint8Array(32),
+                        allowCredentials: [
+                            {
+                                id: new Uint8Array(16),
+                                type: 'public-key',
+                            },
+                        ],
+                    },
+                })
+                .then((credential) => {
+                    console.log('Credential retrieved:', credential);
+                    alert('WebAuthn get method was successful!');
+                })
+                .catch((err) => {
+                    console.error('Error during WebAuthn get:', err);
+                    alert('WebAuthn get method failed: ' + err);
+                });
+        }
     </script>
 
     <!-- Eruda is console for mobile browsers -->
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
     <script>
-      eruda.init()
+        eruda.init();
     </script>
-  </body>
+</body>
 </html>
