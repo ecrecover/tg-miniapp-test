@@ -198,7 +198,7 @@
             id="token_input"
             class="token-input"
             placeholder="Enter token(Max 1024 bytes)"
-            value="cdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd"
+            value="cdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd"
           />
           <span id="token_byte_count"></span>
           <button onclick="DemoApp.biometricSetToken(this)">Set Token</button>
@@ -304,7 +304,7 @@
         writeRequest.onsuccess = () => {
           Telegram.WebApp.showAlert('Write Data: Success')
           db.close()
-          indexedDB.deleteDatabase(dbName) // 清理数据库
+          indexedDB.deleteDatabase(dbName) // 清��数据库
         }
         writeRequest.onerror = () => {
           Telegram.WebApp.showAlert('Write Data: Failed')
@@ -480,7 +480,9 @@
         biometricRequestAccess(el) {
           const biometricManager = Telegram.WebApp.BiometricManager
           if (!biometricManager.isInited) {
-            return this.showAlert('Biometric recognition not initialized!')
+            return Telegram.WebApp.showAlert(
+              'Biometric recognition not initialized!'
+            )
           }
 
           biometricManager.requestAccess(
@@ -503,7 +505,9 @@
         biometricRequestAuth(el) {
           const biometricManager = Telegram.WebApp.BiometricManager
           if (!biometricManager.isInited) {
-            return this.showAlert('Biometric recognition not initialized!')
+            return Telegram.WebApp.showAlert(
+              'Biometric recognition not initialized!'
+            )
           }
 
           el.nextElementSibling.innerHTML = ''
@@ -530,7 +534,9 @@
         biometricOpenSettings(el) {
           const biometricManager = Telegram.WebApp.BiometricManager
           if (!biometricManager.isInited) {
-            return this.showAlert('Biometric recognition not initialized!')
+            return Telegram.WebApp.showAlert(
+              'Biometric recognition not initialized!'
+            )
           }
 
           if (
@@ -547,37 +553,47 @@
         biometricSetToken(el) {
           const biometricManager = Telegram.WebApp.BiometricManager
           if (!biometricManager.isInited) {
-            return this.showAlert('Biometric recognition not initialized!')
+            return Telegram.WebApp.showAlert(
+              'Biometric recognition not initialized!'
+            )
           }
 
           const tokenInput = document.getElementById('token_input')
           const token = tokenInput.value.trim()
 
           if (!token) {
-            return this.showAlert('Please enter a valid token!')
+            return Telegram.WebApp.showAlert('Please enter a valid token!')
           }
 
-          biometricManager.updateBiometricToken(token, function (updated) {
-            if (updated) {
-              document.getElementById('bm_token_saved').textContent =
-                biometricManager.isBiometricTokenSaved ? 'true' : 'false'
-              el.nextElementSibling.nextElementSibling.innerHTML =
-                '(Updated: ' + token + ')'
-              el.nextElementSibling.nextElementSibling.className =
-                'token-display ok'
-              DemoApp.updateTokenByteCount()
-            } else {
-              el.nextElementSibling.nextElementSibling.innerHTML = '(Failed)'
-              el.nextElementSibling.nextElementSibling.className =
-                'token-display err'
-            }
-          })
+          try {
+            biometricManager.updateBiometricToken(token, function (updated) {
+              if (updated) {
+                document.getElementById('bm_token_saved').textContent =
+                  biometricManager.isBiometricTokenSaved ? 'true' : 'false'
+                el.nextElementSibling.nextElementSibling.innerHTML =
+                  '(Updated: ' + token + ')'
+                el.nextElementSibling.nextElementSibling.className =
+                  'token-display ok'
+                DemoApp.updateTokenByteCount()
+              } else {
+                el.nextElementSibling.nextElementSibling.innerHTML = '(Failed)'
+                el.nextElementSibling.nextElementSibling.className =
+                  'token-display err'
+                Telegram.WebApp.showAlert('Failed to update biometric token')
+              }
+            })
+          } catch (error) {
+            console.error('Error in biometricSetToken:', error)
+            Telegram.WebApp.showAlert('Error: ' + error.message)
+          }
         },
 
         biometricRemoveToken(el) {
           const biometricManager = Telegram.WebApp.BiometricManager
           if (!biometricManager.isInited) {
-            return this.showAlert('Biometric recognition not initialized!')
+            return Telegram.WebApp.showAlert(
+              'Biometric recognition not initialized!'
+            )
           }
 
           biometricManager.updateBiometricToken('', function (updated) {
