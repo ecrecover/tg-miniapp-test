@@ -372,6 +372,9 @@
       function setViewportData() {
         var viewportInfo = ''
         viewportInfo +=
+          'Telegram WebApp version: ' + Telegram.WebApp.version + '\n'
+        viewportInfo += 'Platform: ' + Telegram.WebApp.platform + '\n'
+        viewportInfo +=
           'Viewport size: ' +
           window.innerWidth +
           ' x ' +
@@ -381,6 +384,12 @@
           'Is Expanded: ' +
           (Telegram.WebApp.isExpanded ? 'true' : 'false') +
           '\n'
+        viewportInfo += 'Color scheme: ' + Telegram.WebApp.colorScheme + '\n'
+        viewportInfo +=
+          'Theme params: ' +
+          JSON.stringify(Telegram.WebApp.themeParams, null, 2) +
+          '\n'
+        viewportInfo += 'Init data: ' + Telegram.WebApp.initData + '\n'
 
         document.querySelector('.webview-info').textContent = viewportInfo
       }
