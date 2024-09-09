@@ -9,68 +9,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>OKX Telegram Mini Apps Test App</title>
     <style>
+      :root {
+        --primary-color: #000000;
+        --secondary-color: #333333;
+        --background-color: var(--tg-theme-bg-color, #ffffff);
+        --text-color: var(--tg-theme-text-color, #333333);
+        --link-color: var(--tg-theme-link-color, #000000);
+      }
       body {
-        --bg-color: var(--tg-theme-bg-color);
-        font: 12px/18px 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica,
-          Verdana, sans-serif;
-        background-color: var(--bg-color);
-        color: var(--tg-theme-text-color);
-        margin: 48px 24px;
-        padding: 2px;
-        color-scheme: var(--tg-color-scheme);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.4;
+        padding: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 14px;
       }
-
+      h1,
+      h2 {
+        color: var(--primary-color);
+        margin: 10px 0;
+      }
+      button {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        margin: 3px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 12px;
+      }
+      button:hover {
+        background-color: var(--secondary-color);
+      }
+      input[type='text'] {
+        width: calc(100% - 16px);
+        padding: 8px;
+        margin: 3px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 12px;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 5px 0;
+      }
+      li {
+        margin-bottom: 5px;
+      }
       a {
-        color: var(--tg-theme-link-color);
+        color: var(--link-color);
+        text-decoration: none;
       }
-      #viewport {
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        height: var(--tg-viewport-stable-height, 100vh);
-        pointer-events: none;
-        transition: all 0.2s ease;
+      a:hover {
+        text-decoration: underline;
       }
-      #viewport:after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        border-width: 4px;
-        border-style: solid;
-        border-image: linear-gradient(
-            45deg,
-            rgba(64, 224, 208, 0.5),
-            rgba(173, 255, 47, 0.5)
-          )
-          1;
+      .section {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
       }
-
-      #viewport-params-size,
-      #viewport-params-expand {
-        content: attr(text);
-        position: absolute;
-        display: inline-block;
-        background: var(--tg-theme-link-color, rgb(64, 224, 208));
-        right: 4px;
-        left: auto;
-        font-size: 8px;
-        padding: 4px;
-        vertical-align: top;
+      .token-input {
+        font-size: 11px;
+        word-break: break-all;
       }
-      #viewport-params-size {
-        top: 4px;
-      }
-      #viewport-params-expand {
-        top: 30px;
+      .webview-info {
+        font-family: monospace;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+        white-space: pre-wrap;
+        word-break: break-all;
       }
     </style>
   </head>
-
   <body>
     <main>
       <div align="center">
@@ -78,50 +100,63 @@
           ><img width="48" src="./assets/okx.jpeg" alt="logo of okx"
         /></a>
       </div>
-      <h1>WebAuthn</h1>
-      <button onclick="webauthnCreate()">Test WebAuthn Create</button>
-      <button onclick="webauthnGet()">Test WebAuthn Get</button>
 
-      <h1>IndexedDB Support</h1>
-      <button onclick="checkIndexedDBSupport()">Check IndexedDB Support</button>
-      <button onclick="checkOpenDatabase()">Check Open Database</button>
-      <button onclick="checkCreateStore()">Check Create Store</button>
-      <button onclick="checkWriteData()">Check Write Data</button>
-      <button onclick="checkReadData()">Check Read Data</button>
+      <div class="section">
+        <h2>WebAuthn</h2>
+        <button onclick="webauthnCreate()">Test WebAuthn Create</button>
+        <button onclick="webauthnGet()">Test WebAuthn Get</button>
+      </div>
 
-      <h1>Modals</h1>
-      <button onclick="Telegram.WebApp.showAlert('Hello World!');">
-        Launch Alert
-      </button>
-      <button onclick="showPopup();">Launch Popup</button>
+      <div class="section">
+        <h2>IndexedDB Support</h2>
+        <button onclick="checkIndexedDBSupport()">
+          Check IndexedDB Support
+        </button>
+        <button onclick="checkOpenDatabase()">Check Open Database</button>
+        <button onclick="checkCreateStore()">Check Create Store</button>
+        <button onclick="checkWriteData()">Check Write Data</button>
+        <button onclick="checkReadData()">Check Read Data</button>
+      </div>
 
-      <h1>Links</h1>
-      <ul>
-        <li>
-          <a
-            href="javascript:Telegram.WebApp.openTelegramLink('https://t.me/trendingapps');"
-            >Open link within Telegram</a
-          >
-        </li>
-        <li>
-          <a href="javascript:Telegram.WebApp.openLink('https://ton.org/');"
-            >Open link in external browser</a
-          >
-        </li>
-        <li>
-          <a
-            href="javascript:Telegram.WebApp.openLink('https://telegra.ph/api',{try_instant_view:true});"
-            >Open link inside Telegram webview</a
-          >
-        </li>
-      </ul>
+      <div class="section">
+        <h2>Modals</h2>
+        <button onclick="Telegram.WebApp.showAlert('Hello World!');">
+          Launch Alert
+        </button>
+        <button onclick="showPopup();">Launch Popup</button>
+      </div>
 
-      <h1>Buttons</h1>
-      <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
-      <button onclick="toggleMainButton();">Toggle Main Button</button>
+      <div class="section">
+        <h2>Links</h2>
+        <ul>
+          <li>
+            <a
+              href="javascript:Telegram.WebApp.openTelegramLink('https://t.me/trendingapps');"
+              >Open link within Telegram</a
+            >
+          </li>
+          <li>
+            <a href="javascript:Telegram.WebApp.openLink('https://ton.org/');"
+              >Open link in external browser</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:Telegram.WebApp.openLink('https://telegra.ph/api',{try_instant_view:true});"
+              >Open link inside Telegram webview</a
+            >
+          </li>
+        </ul>
+      </div>
 
-      <h1>Biometrics</h1>
-      <div>
+      <div class="section">
+        <h2>Buttons</h2>
+        <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
+        <button onclick="toggleMainButton();">Toggle Main Button</button>
+      </div>
+
+      <div class="section">
+        <h2>Biometrics</h2>
         <p>Status: <span id="bm_inited">false</span></p>
         <p>Available: <span id="bm_available">false</span></p>
         <p>Type: <span id="bm_type"></span></p>
@@ -142,7 +177,14 @@
         </p>
         <p>
           Token Saved: <span id="bm_token_saved">false</span>
-          <input type="text" id="token_input" placeholder="Enter token" />
+          <input
+            type="text"
+            id="token_input"
+            class="token-input"
+            placeholder="Enter token"
+            value="1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
+1234567890abcdef1234567890abcdef1234567890abcd"
+          />
           <button onclick="DemoApp.biometricSetToken(this)">Set Token</button>
           <button onclick="DemoApp.biometricRemoveToken(this)">
             Remove Token
@@ -158,9 +200,11 @@
         </p>
       </div>
     </main>
-    <div id="viewport"></div>
-    <div id="viewport-params-size"></div>
-    <div id="viewport-params-expand"></div>
+
+    <div class="webview-info">
+      <div id="viewport"></div>
+    </div>
+
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
       // Init TWA
@@ -310,17 +354,19 @@
       }
 
       function setViewportData() {
-        var sizeEl = document.getElementById('viewport-params-size')
-        sizeEl.innerText =
-          'width: ' +
+        var viewportInfo = ''
+        viewportInfo +=
+          'Viewport size: ' +
           window.innerWidth +
           ' x ' +
-          'height: ' +
-          Telegram.WebApp.viewportStableHeight
+          Telegram.WebApp.viewportStableHeight +
+          '\n'
+        viewportInfo +=
+          'Is Expanded: ' +
+          (Telegram.WebApp.isExpanded ? 'true' : 'false') +
+          '\n'
 
-        var expandEl = document.querySelector('#viewport-params-expand')
-        expandEl.innerText =
-          'Is Expanded: ' + (Telegram.WebApp.isExpanded ? 'true' : 'false')
+        document.querySelector('.webview-info').textContent = viewportInfo
       }
 
       Telegram.WebApp.setHeaderColor('secondary_bg_color')
