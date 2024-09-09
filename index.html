@@ -101,6 +101,10 @@
         background-color: #f0f0f0;
         border-radius: 4px;
       }
+      #bm_device_id {
+        word-break: break-all;
+        white-space: wrap;
+      }
       #token_byte_count {
         display: block;
         font-size: 12px;
@@ -304,7 +308,7 @@
         writeRequest.onsuccess = () => {
           Telegram.WebApp.showAlert('Write Data: Success')
           db.close()
-          indexedDB.deleteDatabase(dbName) // 清��数据库
+          indexedDB.deleteDatabase(dbName) // 清数据库
         }
         writeRequest.onerror = () => {
           Telegram.WebApp.showAlert('Write Data: Failed')
@@ -452,7 +456,6 @@
             alert('WebAuthn get method failed: ' + err)
           })
       }
-
       const DemoApp = {
         biometricInited: false,
 
