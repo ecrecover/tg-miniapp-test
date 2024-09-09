@@ -91,6 +91,16 @@
         white-space: pre-wrap;
         word-break: break-all;
       }
+      .token-display {
+        display: block;
+        word-break: break-all;
+        white-space: pre-wrap;
+        font-size: 11px;
+        margin-top: 5px;
+        padding: 5px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+      }
     </style>
   </head>
   <body>
@@ -182,21 +192,20 @@
             id="token_input"
             class="token-input"
             placeholder="Enter token"
-            value="1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
-1234567890abcdef1234567890abcdef1234567890abcd"
+            value="1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd"
           />
           <button onclick="DemoApp.biometricSetToken(this)">Set Token</button>
           <button onclick="DemoApp.biometricRemoveToken(this)">
             Remove Token
           </button>
-          <span></span>
+          <span class="token-display"></span>
         </p>
         <p>Device ID: <span id="bm_device_id"></span></p>
         <p>
           <button onclick="DemoApp.biometricRequestAuth(this)">
             Request Authentication
           </button>
-          <span></span>
+          <span class="token-display"></span>
         </p>
       </div>
     </main>
@@ -502,10 +511,10 @@
               if (success) {
                 el.nextElementSibling.innerHTML =
                   '(Success, token: ' + token + ')'
-                el.nextElementSibling.className = 'ok'
+                el.nextElementSibling.className = 'token-display ok'
               } else {
                 el.nextElementSibling.innerHTML = '(Failed)'
-                el.nextElementSibling.className = 'err'
+                el.nextElementSibling.className = 'token-display err'
               }
             }
           )
@@ -545,11 +554,14 @@
             if (updated) {
               document.getElementById('bm_token_saved').textContent =
                 biometricManager.isBiometricTokenSaved ? 'true' : 'false'
-              el.nextElementSibling.innerHTML = '(Updated: ' + token + ')'
-              el.nextElementSibling.className = 'ok'
+              el.nextElementSibling.nextElementSibling.innerHTML =
+                '(Updated: ' + token + ')'
+              el.nextElementSibling.nextElementSibling.className =
+                'token-display ok'
             } else {
-              el.nextElementSibling.innerHTML = '(Failed)'
-              el.nextElementSibling.className = 'err'
+              el.nextElementSibling.nextElementSibling.innerHTML = '(Failed)'
+              el.nextElementSibling.nextElementSibling.className =
+                'token-display err'
             }
           })
         },
@@ -564,11 +576,13 @@
             if (updated) {
               document.getElementById('bm_token_saved').textContent =
                 biometricManager.isBiometricTokenSaved ? 'true' : 'false'
-              el.nextElementSibling.innerHTML = '(Removed)'
-              el.nextElementSibling.className = 'ok'
+              el.nextElementSibling.nextElementSibling.innerHTML = '(Removed)'
+              el.nextElementSibling.nextElementSibling.className =
+                'token-display ok'
             } else {
-              el.nextElementSibling.innerHTML = '(Failed)'
-              el.nextElementSibling.className = 'err'
+              el.nextElementSibling.nextElementSibling.innerHTML = '(Failed)'
+              el.nextElementSibling.nextElementSibling.className =
+                'token-display err'
             }
           })
         },
