@@ -129,7 +129,7 @@
     "message": "Средняя"
   },
   "extension_defi_top_subtitle_use_utxo_lose_assets_icu": {
-    "message": "The below UTXOs will be used in this transaction. After the transaction, all your assets (except {chainName}) in these UTXOs will be sent or burned."
+    "message": "Для проведения этой транзакции будут использованы UTXO, указанные ниже. Активы (кроме {chainName}) в этих UTXO отправляются или сгорают."
   },
   "extension_wallet_create_colored_cpu": {
     "message": "ЦП"
@@ -635,6 +635,9 @@
   "extension_wallet_transaction_subtitle_multi_selectable": {
     "message": "Выберите формат адреса, который вы хотели бы использовать"
   },
+  "wallet_extension_btc_tab_title_network": {
+    "message": "BTC networks"
+  },
   "wallet_extension_swapforgas_label_num_transactions": {
     "message": "≈ {num} транзакций"
   },
@@ -853,6 +856,9 @@
   },
   "wallet_extension_nft_popup_text_token_standard": {
     "message": "Стандарт токена"
+  },
+  "wallet_extension_btc_tooltip_svm_network_address": {
+    "message": "Your address is a BTC network address. You can use it to manage your assets on other BTC-compatible networks."
   },
   "wallet_extension_inscription_text_hex_data_optional": {
     "message": "Данные HEX (необязательно)"
@@ -1141,6 +1147,9 @@
   },
   "wallet_extension_password_popup_btn_maybe_later": {
     "message": "Позже"
+  },
+  "extension_wallet_available_coin_balance": {
+    "message": "Available {coin}"
   },
   "wallet_extension_popup_btn_confirm": {
     "message": "Подтвердить"
@@ -1479,7 +1488,7 @@
     "message": "Мемо скопировано"
   },
   "extension_defi_popup_desc_btc_address_type_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Сеть {chainName} поддерживает 4 типа адресов, открытых для выбранных кошельков. Активы можно переводить на каждый из этих адресов. Адреса Taproot предоставляют более низкие комиссии и улучшенную масштабируемость."
   },
   "extension_settings_link_linkwallet": {
     "message": "https://www.okx.com/ru/help/web3-security-audit-reports"
@@ -1646,6 +1655,9 @@
   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
     "message": "Нажмите на каждое слово в правильном порядке"
   },
+  "wallet_extension_ton_title_input_address": {
+    "message": "Import address"
+  },
   "wallet_extension_send_status_speedingup": {
     "message": "Ускоряется"
   },
@@ -1700,6 +1712,9 @@
   "wallet_extension_send_emptystate_no_inscription": {
     "message": "Нет надписей для отправки"
   },
+  "wallet_extension_btc_import_tab_title_network": {
+    "message": "BTC networks"
+  },
   "wallet_extension_default_radio_okx_preferred": {
     "message": "Направлять в Кошелек OKX при нажатии на другие кошельки"
   },
@@ -1715,6 +1730,9 @@
   "wallet_extension_option_singlechain": {
     "message": "Переключиться на сети EVM"
   },
+  "wallet_extension_ton_desc_input_address": {
+    "message": "You can generate different TON addresses using the current seed phrase. Select the type you’d like to import."
+  },
   "wallet_extension_transaction_input_label_to": {
     "message": "На"
   },
@@ -1726,6 +1744,9 @@
   },
   "extension_defi_popup_emptystate_title_data_loading_fail": {
     "message": "Не удалось загрузить данные. Повторите попытку позже."
+  },
+  "wallet_extension_multisend_toast_gas_fee_info": {
+    "message": "Each wallet will send an extra 0.01 TON for the network fee. Any unused amount will be refunded to your wallet after the transaction."
   },
   "wallet_extension_home_popup_btn_maybe_later": {
     "message": "Позже"
@@ -2792,6 +2813,9 @@
   "extension_wallet_verification_title_account_mismatch": {
     "message": "Ваш биржевой аккаунт не соответствует бесключевому кошельку"
   },
+  "wallet_extension_status_tag_withdraw": {
+    "message": "Withdrawing"
+  },
   "wallet_extension_top_subtitle_turnon_ledger": {
     "message": "Добавьте аккаунт для своего актива в Ledger Live"
   },
@@ -2971,6 +2995,9 @@
   },
   "developer_mode_send_toast_nonetoken": {
     "message": "Криптовалюты в кошельке отсутствуют"
+  },
+  "wallet_extension_fee_desc_default_gas": {
+    "message": "The estimated network fee may increase if network conditions change."
   },
   "wallet_extension_text_cancel_listing": {
     "message": "Отменить размещение"
@@ -3333,7 +3360,7 @@
     "message": "Лимит газа должен составлять не менее {minimumGasLimit}"
   },
   "wallet_extension_sonic_header_btc_address_icu": {
-    "message": "{chainName} address"
+    "message": "Адрес {chainName}"
   },
   "commonall_datetime_abbr_month": {
     "message": "МЕС."
@@ -3966,7 +3993,7 @@
     "message": "Обмен на газ не выполнен. Возможные причины:\n· Недостаточный баланс из-за последовательных ордеров\n· Перезаписанная транзакция из-за последовательных ордеров\nИнициируйте новую транзакцию только после выполнения обмена на газ."
   },
   "extension_defi_mid_tooltips_asset_in_4address_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Сеть {chainName} поддерживает 4 типа адресов, открытых для выбранных кошельков. Активы можно переводить на каждый из этих адресов. Адреса Taproot предоставляют более низкие комиссии и улучшенную масштабируемость."
   },
   "wallet_extension_hover_change_address_format": {
     "message": "Нажмите, чтобы установить формат адреса по умолчанию"
@@ -4364,6 +4391,9 @@
   "commonall_filter_title_free": {
     "message": "Бесплатно"
   },
+  "wallet_extension_ton_select_multi_chain_wallet": {
+    "message": "Multichain wallet"
+  },
   "wallet_extension_overview_tab_farm": {
     "message": "Фарминг"
   },
@@ -4680,7 +4710,7 @@
     "message": "Подключены сети ({num})"
   },
   "extension_defi_top_tooltips_only_usage_utxo_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Сеть {chainName} поддерживает 4 типа адресов, открытых для выбранных кошельков. Активы можно переводить на каждый из этих адресов. Адреса Taproot предоставляют более низкие комиссии и улучшенную масштабируемость."
   },
   "wallet_home_backup_warning_maintitle_not_backup": {
     "message": "Отсутствует резервная копия"
@@ -4720,6 +4750,9 @@
   },
   "commonall_enterfield_title_to": {
     "message": "Вы получите"
+  },
+  "wallet_extension_switch_drawer_current_account": {
+    "message": "Current wallet account"
   },
   "wallet_extension_private_key_text_separate_private_keys": {
     "message": "Закрытые ключи должны отделяться друг от друга символами или переводом строки"
@@ -4937,6 +4970,9 @@
   "wallet_extension_addaccount_adding_maintitle_create_failed": {
     "message": "Не удалось добавить аккаунты"
   },
+  "wallet_extension_switch_drawer_dapp_account": {
+    "message": "Current {dapp} account"
+  },
   "wallet_extension_hardware_btn_delete_account": {
     "message": "Удалить аккаунт"
   },
@@ -5020,6 +5056,9 @@
   },
   "wallet_brc20_reminder_card_state_looked_tooltips": {
     "message": "Эта надпись используется в сделке и до подтверждения транзакции не может стать предметом торговли или перевода"
+  },
+  "wallet_extension_ton_select_ton_address": {
+    "message": "TON address: {address}"
   },
   "wallet_extension_account_header_title_select_wallet": {
     "message": "Выбор кошелька"
@@ -5191,6 +5230,9 @@
   },
   "wallet_extension_receive_title_set_amount": {
     "message": "Укажите количество средств"
+  },
+  "wallet_extension_bot_checkbox_default_gas": {
+    "message": "Set as default for all future transactions on {networkName}"
   },
   "extension_wallet_list_text_mev_protection": {
     "message": "Защита MEV"
@@ -5529,7 +5571,7 @@
     "message": "Сумма"
   },
   "extension_defi_bot_popuptext_current_balance_coverage_icu": {
-    "message": "The available balance excludes {chainName} locked by inscriptions and small amounts of {chainName} that’ll increase network fees."
+    "message": "В доступном балансе не учитываются {chainName}, заблокированные в надписях, и небольшие суммы в {chainName}, повышающие сетевые комиссии."
   },
   "wallet_extension_home_link_learn_more": {
     "message": "Подробнее"
@@ -5643,7 +5685,7 @@
     "message": "Этого адреса нет в расширении вашего кошелька."
   },
   "extension_defi_top_tooltips_only_usage_utxo_value_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Сеть {chainName} поддерживает 4 типа адресов, открытых для выбранных кошельков. Активы можно переводить на каждый из этих адресов. Адреса Taproot предоставляют более низкие комиссии и улучшенную масштабируемость."
   },
   "wallet_extension_transaction_tab_params": {
     "message": "Params"
@@ -5796,7 +5838,7 @@
     "message": "Далее"
   },
   "extension_defi_mid_subtitle_utxo_cover_fee_icu": {
-    "message": "The below UTXOs will be used to cover network fee in this transaction. After the transaction, all your assets (except {chainName}) in these UTXOs will be sent or burned."
+    "message": "UTXO, указанные ниже, будут использованы для покрытия сетевой комиссии за эту транзакцию. После этого все ваши активы (кроме {chainName}) в этих UTXO отправляются или сгорают."
   },
   "wallet_extension_header_subtitle_connected_dapp": {
     "message": "Подключенные DApp"
@@ -6327,7 +6369,7 @@
     "message": "Просим сначала обработать все транзакции."
   },
   "extension_wallet_transaction_notif_address_copied_icu": {
-    "message": "{chainName} {address} address copied"
+    "message": "Адрес {chainName} {address} скопирован"
   },
   "wallet_extension_cryptodetail_tooltips_max_supply": {
     "message": "Наибольшая сумма криптовалюты, которая может находиться в обращении в течение всего срока существования этой криптовалюты.\n\nЕсли объем криптовалюты в обращении неограничен или не поддается оценке, то общая эмиссия может отображаться как «рассчитать невозможно»."
@@ -6438,7 +6480,7 @@
     "message": "Безопасный режим"
   },
   "extension_wallet_receive_text_supported_only_icu": {
-    "message": "Only {chainName} assets (except BRC-20, SRC-20, and ARC-20 assets) supported"
+    "message": "Поддерживаются только активы в {chainName} (кроме BRC-20, SRC-20 и ARC-20)"
   },
   "wallet_extension_btn_backup_seed_phrase_now": {
     "message": "Запишите сид-фразу"
@@ -6897,7 +6939,7 @@
     "message": "Недостаточный баланс для оплаты сетевой комиссии. Внесите средства на аккаунт."
   },
   "extension_defi_popup_desc_new_address_default_icu": {
-    "message": "By confirming address type, the new address will be the default address for all your {chainName} transactions in OKX Wallet."
+    "message": "После подтверждения типа адреса он станет адресом по умолчанию для всех транзакций в {chainName} в Кошельке OKX."
   },
   "wallet_extension_mid_btn_retry": {
     "message": "Повторить"
@@ -6948,7 +6990,7 @@
     "message": "Лимит газа должен превышать 21 000"
   },
   "extension_wallet_btc_error_notif_insufficient_btc_icu": {
-    "message": "Insufficient balance since {chainName} has been locked by a pending transaction or NFT. You can wait for the transaction to complete or unlock UTXOs."
+    "message": "Недостаточный баланс {chainName}: активы задействованы в незавершенных транзакциях или на рынке NFT. Дождитесь выполнения транзакции или разблокируйте UTXO."
   },
   "extension_wallet_transaction_item_inscribe_totalfee": {
     "message": "Всего"
@@ -7109,6 +7151,9 @@
   "commonall_button_title_faq": {
     "message": "Вопросы и ответы"
   },
+  "wallet_extension_btc_tooltip_support_networks": {
+    "message": "BTC networks supported: {network}"
+  },
   "wallet_home_btn_manage_crypto": {
     "message": "Управлять"
   },
@@ -7201,6 +7246,9 @@
   },
   "wallet_extension_errormsg_unavailable_address": {
     "message": "Текущий адрес подвержен риску. Чтобы защитить свои активы, переключитесь на другой адрес."
+  },
+  "wallet_extension_btc_tab_desc_network": {
+    "message": "We now support {number}+ BTC networks"
   },
   "wallet_extension_list_alert_frozen_loss": {
     "message": "Заморозка приведет к потере токенов BRC-20 и соответствующих NFT"
@@ -7431,7 +7479,7 @@
     "message": "Подтвердите свою подпись"
   },
   "wallet_extension_bot_text_confirm_unoccupy_icu": {
-    "message": "Once the UTXOs are unlocked, the inscription or Rune assets included in them will be treated as {chainName}. You may lose these assets in transactions. Proceed with caution."
+    "message": "После разблокировки UTXO активы в надписях и Rune, содержащиеся в них, будут считаться {chainName}. При проведении транзакций возможна потеря этих активов. Будьте осторожны."
   },
   "developer_mode_tag_text_waiting": {
     "message": "Ожидание"
@@ -7820,6 +7868,9 @@
   "wallet_extension_solana_toast_no_contract_loss": {
     "message": "Такого контракта не существует. Чтобы не потерять активы, прежде всего проверьте сеть."
   },
+  "wallet_extension_switch_drawer_title_inconsistent": {
+    "message": "Current wallet account doesn’t match the {DApp} account"
+  },
   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
     "message": "Недостаточно {chainSymbol} для внесения платы за газ"
   },
@@ -8120,6 +8171,9 @@
   "wallet_extension_home_text_add_multiple": {
     "message": "Добавляйте несколько аккаунтов кошелька одним действием"
   },
+  "wallet_extension_ton_select_ton_wallet": {
+    "message": "TON wallet"
+  },
   "wallet_extension_transfer_text_phishing_risk": {
     "message": "С адреса {address} замечены фишинговые действия. Помните о возможных попытках фишинга."
   },
@@ -8232,7 +8286,7 @@
     "message": "Пользовательская сеть"
   },
   "extension_defi_errortip_not_enough_btc_icu": {
-    "message": "You have insufficient {chainName} balance for network fee."
+    "message": "Недостаточно {chainName} для оплаты сетевой комиссии."
   },
   "wallet_extension_history_list_revoke_approval": {
     "message": "Отменить разрешение {symbol}"
@@ -8466,7 +8520,7 @@
     "message": "Часто задаваемые вопросы"
   },
   "extension_defi_popup_title_btc_address_type_icu": {
-    "message": "{chainName} address type"
+    "message": "Тип адреса {chainName}"
   },
   "extension_wallet_contractual_interaction_wallet_unavailable": {
     "message": "Текущий кошелек не поддерживает эту транзакцию. Смените кошелке и повторите попытку"

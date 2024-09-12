@@ -52,7 +52,6 @@
           }
         },
         set: async (object) => {
-          console.log('store', object);
           if (!object || typeof object !== 'object') {
             return;
           }
@@ -91,6 +90,11 @@
         });
       },
     };
+  </script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>
+    eruda.init()
   </script>
 </head>
 

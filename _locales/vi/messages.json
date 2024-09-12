@@ -129,7 +129,7 @@
     "message": "Trung bình"
   },
   "extension_defi_top_subtitle_use_utxo_lose_assets_icu": {
-    "message": "The below UTXOs will be used in this transaction. After the transaction, all your assets (except {chainName}) in these UTXOs will be sent or burned."
+    "message": "Những UTXO bên dưới sẽ được dùng cho giao dịch này. Sau giao dịch, tất cả tài sản (trừ {chainName}) trong các UTXO này sẽ được gửi đi hoặc bị đốt."
   },
   "extension_wallet_create_colored_cpu": {
     "message": "CPU"
@@ -635,6 +635,9 @@
   "extension_wallet_transaction_subtitle_multi_selectable": {
     "message": "Chọn định dạng địa chỉ bạn muốn dùng"
   },
+  "wallet_extension_btc_tab_title_network": {
+    "message": "BTC networks"
+  },
   "wallet_extension_swapforgas_label_num_transactions": {
     "message": "≈ {num} giao dịch"
   },
@@ -853,6 +856,9 @@
   },
   "wallet_extension_nft_popup_text_token_standard": {
     "message": "Tiêu chuẩn token"
+  },
+  "wallet_extension_btc_tooltip_svm_network_address": {
+    "message": "Your address is a BTC network address. You can use it to manage your assets on other BTC-compatible networks."
   },
   "wallet_extension_inscription_text_hex_data_optional": {
     "message": "Dữ liệu HEX (không bắt buộc)"
@@ -1141,6 +1147,9 @@
   },
   "wallet_extension_password_popup_btn_maybe_later": {
     "message": "Có lẽ để sau"
+  },
+  "extension_wallet_available_coin_balance": {
+    "message": "Available {coin}"
   },
   "wallet_extension_popup_btn_confirm": {
     "message": "Xác nhận"
@@ -1479,7 +1488,7 @@
     "message": "Đã sao chép memo"
   },
   "extension_defi_popup_desc_btc_address_type_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Mạng {chainName} hỗ trợ 4 loại địa chỉ, hiển thị trong các ví được chọn. Tài sản có thể được chuyển giữa các địa chỉ này. Địa chỉ Taproot có mức phí thấp hơn và khả năng mở rộng được cải thiện."
   },
   "extension_settings_link_linkwallet": {
     "message": "https://www.okx.com/vi/help/web3-security-audit-reports"
@@ -1646,6 +1655,9 @@
   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
     "message": "Chọn từng từ theo thứ tự"
   },
+  "wallet_extension_ton_title_input_address": {
+    "message": "Import address"
+  },
   "wallet_extension_send_status_speedingup": {
     "message": "Đang tăng tốc"
   },
@@ -1700,6 +1712,9 @@
   "wallet_extension_send_emptystate_no_inscription": {
     "message": "Không có inscription để gửi"
   },
+  "wallet_extension_btc_import_tab_title_network": {
+    "message": "BTC networks"
+  },
   "wallet_extension_default_radio_okx_preferred": {
     "message": "Chuyển đến Ví Web3 OKX nếu bấm vào ví khác"
   },
@@ -1715,6 +1730,9 @@
   "wallet_extension_option_singlechain": {
     "message": "Chuyển mạng EVM"
   },
+  "wallet_extension_ton_desc_input_address": {
+    "message": "You can generate different TON addresses using the current seed phrase. Select the type you’d like to import."
+  },
   "wallet_extension_transaction_input_label_to": {
     "message": "Đến"
   },
@@ -1726,6 +1744,9 @@
   },
   "extension_defi_popup_emptystate_title_data_loading_fail": {
     "message": "Không tải được dữ liệu. Hãy thử lại sau."
+  },
+  "wallet_extension_multisend_toast_gas_fee_info": {
+    "message": "Each wallet will send an extra 0.01 TON for the network fee. Any unused amount will be refunded to your wallet after the transaction."
   },
   "wallet_extension_home_popup_btn_maybe_later": {
     "message": "Có lẽ để sau"
@@ -2792,6 +2813,9 @@
   "extension_wallet_verification_title_account_mismatch": {
     "message": "Tài khoản giao dịch của bạn không khớp với ví keyless"
   },
+  "wallet_extension_status_tag_withdraw": {
+    "message": "Withdrawing"
+  },
   "wallet_extension_top_subtitle_turnon_ledger": {
     "message": "Thêm tài khoản cho tài sản của bạn trong Sổ cái Live"
   },
@@ -2971,6 +2995,9 @@
   },
   "developer_mode_send_toast_nonetoken": {
     "message": "Không có tiền mã hóa trong ví"
+  },
+  "wallet_extension_fee_desc_default_gas": {
+    "message": "The estimated network fee may increase if network conditions change."
   },
   "wallet_extension_text_cancel_listing": {
     "message": "Hủy niêm yết"
@@ -3333,7 +3360,7 @@
     "message": "Giới hạn phí gas tối thiểu phải là {minimumGasLimit}"
   },
   "wallet_extension_sonic_header_btc_address_icu": {
-    "message": "{chainName} address"
+    "message": "Địa chỉ {chainName}"
   },
   "commonall_datetime_abbr_month": {
     "message": "Tháng"
@@ -3966,7 +3993,7 @@
     "message": "Không thể hoán đổi lấy gas. Lý do có thể là:\n· Không đủ số dư do đặt lệnh liên tiếp\n· Giao dịch bị ghi đè do đặt lệnh liên tiếp\nĐảm bảo chỉ bắt đầu giao dịch tiếp theo sau khi hoàn tất quá trình hoán đổi lấy gas."
   },
   "extension_defi_mid_tooltips_asset_in_4address_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Mạng {chainName} hỗ trợ 4 loại địa chỉ, hiển thị trong các ví được chọn. Tài sản có thể được chuyển giữa các địa chỉ này. Địa chỉ Taproot có mức phí thấp hơn và khả năng mở rộng được cải thiện."
   },
   "wallet_extension_hover_change_address_format": {
     "message": "Bấm để đặt định dạng địa chỉ mặc định"
@@ -4364,6 +4391,9 @@
   "commonall_filter_title_free": {
     "message": "Miễn phí"
   },
+  "wallet_extension_ton_select_multi_chain_wallet": {
+    "message": "Multichain wallet"
+  },
   "wallet_extension_overview_tab_farm": {
     "message": "Farm"
   },
@@ -4680,7 +4710,7 @@
     "message": "Đã kết nối {num} mạng"
   },
   "extension_defi_top_tooltips_only_usage_utxo_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Mạng {chainName} hỗ trợ 4 loại địa chỉ, hiển thị trong các ví được chọn. Tài sản có thể được chuyển giữa các địa chỉ này. Địa chỉ Taproot có mức phí thấp hơn và khả năng mở rộng được cải thiện."
   },
   "wallet_home_backup_warning_maintitle_not_backup": {
     "message": "Bạn chưa sao lưu ví"
@@ -4720,6 +4750,9 @@
   },
   "commonall_enterfield_title_to": {
     "message": "Sang"
+  },
+  "wallet_extension_switch_drawer_current_account": {
+    "message": "Current wallet account"
   },
   "wallet_extension_private_key_text_separate_private_keys": {
     "message": "Mỗi khóa riêng tư phải được phân tách bằng ký tự hoặc một dòng mới"
@@ -4937,6 +4970,9 @@
   "wallet_extension_addaccount_adding_maintitle_create_failed": {
     "message": "Không thể thêm tài khoản"
   },
+  "wallet_extension_switch_drawer_dapp_account": {
+    "message": "Current {dapp} account"
+  },
   "wallet_extension_hardware_btn_delete_account": {
     "message": "Xóa tài khoản"
   },
@@ -5020,6 +5056,9 @@
   },
   "wallet_brc20_reminder_card_state_looked_tooltips": {
     "message": "Inscription này đang được giao dịch, bạn không thể giao dịch hay chuyển inscription cho đến khi giao dịch được xác nhận"
+  },
+  "wallet_extension_ton_select_ton_address": {
+    "message": "TON address: {address}"
   },
   "wallet_extension_account_header_title_select_wallet": {
     "message": "Chọn ví"
@@ -5191,6 +5230,9 @@
   },
   "wallet_extension_receive_title_set_amount": {
     "message": "Đặt số tiền"
+  },
+  "wallet_extension_bot_checkbox_default_gas": {
+    "message": "Set as default for all future transactions on {networkName}"
   },
   "extension_wallet_list_text_mev_protection": {
     "message": "Bảo vệ MEV"
@@ -5529,7 +5571,7 @@
     "message": "Số lượng"
   },
   "extension_defi_bot_popuptext_current_balance_coverage_icu": {
-    "message": "The available balance excludes {chainName} locked by inscriptions and small amounts of {chainName} that’ll increase network fees."
+    "message": "Số dư khả dụng không bao gồm {chainName} bị khóa bởi inscription và một lượng nhỏ {chainName} sẽ làm tăng phí mạng."
   },
   "wallet_extension_home_link_learn_more": {
     "message": "Tìm hiểu thêm"
@@ -5643,7 +5685,7 @@
     "message": "Địa chỉ này không nằm trong phần mở rộng ví của bạn"
   },
   "extension_defi_top_tooltips_only_usage_utxo_value_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Mạng {chainName} hỗ trợ 4 loại địa chỉ, hiển thị trong các ví được chọn. Tài sản có thể được chuyển giữa các địa chỉ này. Địa chỉ Taproot có mức phí thấp hơn và khả năng mở rộng được cải thiện."
   },
   "wallet_extension_transaction_tab_params": {
     "message": "Params"
@@ -5796,7 +5838,7 @@
     "message": "Tiếp theo"
   },
   "extension_defi_mid_subtitle_utxo_cover_fee_icu": {
-    "message": "The below UTXOs will be used to cover network fee in this transaction. After the transaction, all your assets (except {chainName}) in these UTXOs will be sent or burned."
+    "message": "Những UTXO dưới đây sẽ được dùng để trả phí mạng cho giao dịch này. Sau giao dịch, toàn bộ tài sản (trừ {chainName}) ở các UTXO này sẽ được gửi đi hoặc bị đốt."
   },
   "wallet_extension_header_subtitle_connected_dapp": {
     "message": "DApp đã kết nối"
@@ -6327,7 +6369,7 @@
     "message": "Vui lòng xử lý tất cả các giao dịch trước tiên."
   },
   "extension_wallet_transaction_notif_address_copied_icu": {
-    "message": "{chainName} {address} address copied"
+    "message": "Đã sao chép địa chỉ {chainName} {address}"
   },
   "wallet_extension_cryptodetail_tooltips_max_supply": {
     "message": "Lượng tiền mã hóa cao nhất có thể lưu thông khi tiền mã hóa còn tồn tại.\n\nNếu nguồn cung tiền mã hóa là không giới hạn hoặc chưa được xác minh thì nguồn cung tối đa có thể hiển thị là \"không ước tính được\"."
@@ -6438,7 +6480,7 @@
     "message": "Chế độ Safe"
   },
   "extension_wallet_receive_text_supported_only_icu": {
-    "message": "Only {chainName} assets (except BRC-20, SRC-20, and ARC-20 assets) supported"
+    "message": "Chỉ hỗ trợ tài sản {chainName} (ngoại trừ tài sản BRC-20, SRC-20 và ARC-20)"
   },
   "wallet_extension_btn_backup_seed_phrase_now": {
     "message": "Ghi lại cụm từ hạt giống"
@@ -6897,7 +6939,7 @@
     "message": "Không đủ số dư để thanh toán phí mạng. Hãy nạp tiền vào tài khoản."
   },
   "extension_defi_popup_desc_new_address_default_icu": {
-    "message": "By confirming address type, the new address will be the default address for all your {chainName} transactions in OKX Wallet."
+    "message": "Khi bạn xác nhận loại địa chỉ, địa chỉ mới sẽ là địa chỉ mặc định cho tất cả giao dịch {chainName} trong Ví Web3 OKX."
   },
   "wallet_extension_mid_btn_retry": {
     "message": "Thử lại"
@@ -6948,7 +6990,7 @@
     "message": "Giới hạn phí gas không được vượt quá 21.000"
   },
   "extension_wallet_btc_error_notif_insufficient_btc_icu": {
-    "message": "Insufficient balance since {chainName} has been locked by a pending transaction or NFT. You can wait for the transaction to complete or unlock UTXOs."
+    "message": "Không đủ số dư do {chainName} đã bị khóa bởi một giao dịch hoặc NFT đang chờ xử lý. Bạn có thể đợi giao dịch hoàn tất hoặc mở khóa UTXO."
   },
   "extension_wallet_transaction_item_inscribe_totalfee": {
     "message": "Tổng cộng"
@@ -7109,6 +7151,9 @@
   "commonall_button_title_faq": {
     "message": "Câu hỏi thường gặp"
   },
+  "wallet_extension_btc_tooltip_support_networks": {
+    "message": "BTC networks supported: {network}"
+  },
   "wallet_home_btn_manage_crypto": {
     "message": "Quản lý"
   },
@@ -7201,6 +7246,9 @@
   },
   "wallet_extension_errormsg_unavailable_address": {
     "message": "Địa chỉ hiện tại có rủi ro. Để bảo vệ tài sản của bạn, hãy chuyển sang địa chỉ khác."
+  },
+  "wallet_extension_btc_tab_desc_network": {
+    "message": "We now support {number}+ BTC networks"
   },
   "wallet_extension_list_alert_frozen_loss": {
     "message": "Việc đóng băng sẽ gây tổn thất token BRC-20 và các NFT tương ứng"
@@ -7431,7 +7479,7 @@
     "message": "Xác nhận chữ ký của bạn"
   },
   "wallet_extension_bot_text_confirm_unoccupy_icu": {
-    "message": "Once the UTXOs are unlocked, the inscription or Rune assets included in them will be treated as {chainName}. You may lose these assets in transactions. Proceed with caution."
+    "message": "Sau khi UTXO được mở khóa, tài sản inscription hoặc Rune đi kèm sẽ được coi là {chainName}. Bạn có thể mất những tài sản này trong các giao dịch. Hãy tiến hành thận trọng."
   },
   "developer_mode_tag_text_waiting": {
     "message": "Đang chờ"
@@ -7820,6 +7868,9 @@
   "wallet_extension_solana_toast_no_contract_loss": {
     "message": "Hợp đồng này không tồn tại. Hãy kiểm tra mạng đã chọn trước khi tiếp tục. Ngược lại, bạn có thể mất tài sản của mình."
   },
+  "wallet_extension_switch_drawer_title_inconsistent": {
+    "message": "Current wallet account doesn’t match the {DApp} account"
+  },
   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
     "message": "Không đủ {chainSymbol} để trả phí mạng"
   },
@@ -8120,6 +8171,9 @@
   "wallet_extension_home_text_add_multiple": {
     "message": "Thêm nhiều tài khoản ví chỉ trong một bước"
   },
+  "wallet_extension_ton_select_ton_wallet": {
+    "message": "TON wallet"
+  },
   "wallet_extension_transfer_text_phishing_risk": {
     "message": "{address} bị cảnh báo là hoạt động lừa đảo. Hãy cảnh giác với các hành vi lừa đảo có thể xảy ra."
   },
@@ -8232,7 +8286,7 @@
     "message": "Mạng tùy chỉnh"
   },
   "extension_defi_errortip_not_enough_btc_icu": {
-    "message": "You have insufficient {chainName} balance for network fee."
+    "message": "Số dư {chainName} của bạn không đủ để trả phí mạng."
   },
   "wallet_extension_history_list_revoke_approval": {
     "message": "Thu hồi phê duyệt {symbol}"
@@ -8466,7 +8520,7 @@
     "message": "Câu hỏi thường gặp"
   },
   "extension_defi_popup_title_btc_address_type_icu": {
-    "message": "{chainName} address type"
+    "message": "Loại địa chỉ {chainName}"
   },
   "extension_wallet_contractual_interaction_wallet_unavailable": {
     "message": "Ví hiện tại của bạn không hỗ trợ giao dịch này. Hãy đổi ví, rồi thử lại"

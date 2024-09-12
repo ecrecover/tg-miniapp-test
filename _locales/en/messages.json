@@ -1511,6 +1511,9 @@
   "extension_wallet_asset_btn_data": {
     "message": "Data"
   },
+  "extension_wallet_available_coin_balance": {
+    "message": "Available {coin}"
+  },
   "extension_wallet_balance_text_available_amount": {
     "message": "Available: {amount}"
   },
@@ -3686,6 +3689,9 @@
   "wallet_extension_bot_btn_reconsider": {
     "message": "Maybe later"
   },
+  "wallet_extension_bot_checkbox_default_gas": {
+    "message": "Set as default for all future transactions on {networkName}"
+  },
   "wallet_extension_bot_text_confirm_unoccupy": {
     "message": "Once the UTXOs are unlocked, the inscription or Rune assets included in them will be treated as BTC. You may lose these assets in transactions. Proceed with caution."
   },
@@ -3700,6 +3706,21 @@
   },
   "wallet_extension_btc_header_balance": {
     "message": "Available {token}: {value}"
+  },
+  "wallet_extension_btc_import_tab_title_network": {
+    "message": "BTC networks"
+  },
+  "wallet_extension_btc_tab_desc_network": {
+    "message": "We now support {number}+ BTC networks"
+  },
+  "wallet_extension_btc_tab_title_network": {
+    "message": "BTC networks"
+  },
+  "wallet_extension_btc_tooltip_support_networks": {
+    "message": "BTC networks supported: {network}"
+  },
+  "wallet_extension_btc_tooltip_svm_network_address": {
+    "message": "Your address is a BTC network address. You can use it to manage your assets on other BTC-compatible networks."
   },
   "wallet_extension_btn_backup_seed_phrase_later": {
     "message": "Maybe later"
@@ -4307,6 +4328,9 @@
   "wallet_extension_feature_title_pay_to": {
     "message": "Pay with"
   },
+  "wallet_extension_fee_desc_default_gas": {
+    "message": "The estimated network fee may increase if network conditions change."
+  },
   "wallet_extension_footer_btn_add_network": {
     "message": "Add network"
   },
@@ -4416,7 +4440,7 @@
     "message": "Please enter \"RESET\" below to confirm the reset"
   },
   "wallet_extension_fractal_desc_transaction_risky": {
-    "message": "Unable to decode the UTXO assets for signing. Continuing may result in asset loss. Ensure you fully trust this website. Learn more about {case}"
+    "message": "Unable to decode the UTXO assets for signing. Proceeding may result in asset loss. Make sure you fully trust this website. Learn more about {case}"
   },
   "wallet_extension_fractal_title_transaction_risky": {
     "message": "This transaction is risky"
@@ -5440,6 +5464,9 @@
   },
   "wallet_extension_mpcerror_toast_reimport": {
     "message": "Your wallet has been accessed on the app. Remove the current wallet from the extension and scan the QR code to sync it again."
+  },
+  "wallet_extension_multisend_toast_gas_fee_info": {
+    "message": "Each wallet will send an extra 0.01 TON for the network fee. Any unused amount will be refunded to your wallet after the transaction."
   },
   "wallet_extension_multisender_btn_download": {
     "message": "Download template"
@@ -6710,6 +6737,9 @@
   "wallet_extension_sonic_toast_network_feature": {
     "message": "Unable to automatically switch networks due to {network} compatibility."
   },
+  "wallet_extension_status_tag_withdraw": {
+    "message": "Withdrawing"
+  },
   "wallet_extension_subtitle_approveall": {
     "message": "Approve access to all NFTs of this collection?"
   },
@@ -6847,6 +6877,15 @@
   },
   "wallet_extension_swapforgas_reminder_desc_swap_gas_support": {
     "message": "Unable to swap for gas. Contact customer support for details."
+  },
+  "wallet_extension_switch_drawer_current_account": {
+    "message": "Current wallet account"
+  },
+  "wallet_extension_switch_drawer_dapp_account": {
+    "message": "Current {dapp} account"
+  },
+  "wallet_extension_switch_drawer_title_inconsistent": {
+    "message": "Current wallet account doesn’t match the {DApp} account"
   },
   "wallet_extension_tab_appearance_follow_system": {
     "message": "Match system"
@@ -7052,6 +7091,9 @@
   "wallet_extension_ton_btn_next": {
     "message": "Next"
   },
+  "wallet_extension_ton_desc_input_address": {
+    "message": "You can generate different TON addresses using the current seed phrase. Select the type you’d like to import."
+  },
   "wallet_extension_ton_errormessage_insufficient_balance_gas": {
     "message": "To ensure a successful transaction, hold at least 0.1 TON in your current address."
   },
@@ -7066,6 +7108,18 @@
   },
   "wallet_extension_ton_placeholder_comment_max_character2": {
     "message": "{amount} characters maximum"
+  },
+  "wallet_extension_ton_select_multi_chain_wallet": {
+    "message": "Multichain wallet"
+  },
+  "wallet_extension_ton_select_ton_address": {
+    "message": "TON address: {address}"
+  },
+  "wallet_extension_ton_select_ton_wallet": {
+    "message": "TON wallet"
+  },
+  "wallet_extension_ton_title_input_address": {
+    "message": "Import address"
   },
   "wallet_extension_toolkit_tab_desc_obtain_test_tokens": {
     "message": "Get testnet tokens across various networks"

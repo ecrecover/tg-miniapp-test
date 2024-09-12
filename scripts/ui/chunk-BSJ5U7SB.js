@@ -1,0 +1,6 @@
+import{i as w}from"./chunk-JZYFGUUR.js";import{pa as k,y as W}from"./chunk-FK3ETA6I.js";import{Ra as y,hb as Q,m as d}from"./chunk-QG673PNL.js";import{a as j}from"./chunk-ADZWCU3Q.js";import{f as i,m as u,o as c}from"./chunk-REC7XVZY.js";u();c();var a=i(j()),I=i(W());var b=i(d());Q();u();c();var l=i(d()),x=e=>{if(!e||typeof e!="object")return!1;let r={};return Object.keys(e).forEach(t=>{let o=e[t];r[t]=Array.isArray(o)?o:[o]}),r},A=(e,r)=>{if(!Array.isArray(e))return[];if(!r||(0,l.isEmpty)(r)||typeof r!="object")return e;let t=Object.entries(r);return(0,l.filter)(e,o=>{for(let n=0;n<t.length;n++){let f=t[n][0];if(!t[n][1]?.includes(o[f]))return!1}return!0})};var p=e=>{let r=(0,I.useSelector)(k);return(0,a.useMemo)(()=>{if(!e)return r;let t=x(e);return A(r,t)},[r,e])},T=(e={},r)=>{let t=w(r),o=Object.keys(t?.account||{});return p({...e,localType:o})},E=(e={})=>{let{coinId:r,localType:t,networkId:o,netWorkId:n}=y(e)||{},f=p();return(0,a.useMemo)(()=>{let m=o??n;if(![r,t,m].every(s=>(0,b.isNil)(s)||s===""))return f.find(s=>m!==void 0&&s?.netWorkId===m||r!==void 0&&s?.coinId===r||t!==void 0&&s?.localType===t)},[r,t,o,n,f])};u();c();export{p as a,T as b,E as c};
+
+window.inOKXExtension = true;
+window.ASSETS_BUILD_TYPE = "prepub";
+
+//# sourceMappingURL=chunk-BSJ5U7SB.js.map

@@ -635,6 +635,9 @@
   "extension_wallet_transaction_subtitle_multi_selectable": {
     "message": "当前多个地址有资产，请选择你想交易的地址格式"
   },
+  "wallet_extension_btc_tab_title_network": {
+    "message": "BTC 网络"
+  },
   "wallet_extension_swapforgas_label_num_transactions": {
     "message": "≈ {num} 笔交易"
   },
@@ -853,6 +856,9 @@
   },
   "wallet_extension_nft_popup_text_token_standard": {
     "message": "代币标准"
+  },
+  "wallet_extension_btc_tooltip_svm_network_address": {
+    "message": "当前地址属于 BTC 网络，你可同步管理其他 BTC 兼容网络的资产"
   },
   "wallet_extension_inscription_text_hex_data_optional": {
     "message": "16 进制数据 (选填)"
@@ -1141,6 +1147,9 @@
   },
   "wallet_extension_password_popup_btn_maybe_later": {
     "message": "暂不"
+  },
+  "extension_wallet_available_coin_balance": {
+    "message": "{coin} 余额"
   },
   "wallet_extension_popup_btn_confirm": {
     "message": "确定"
@@ -1646,6 +1655,9 @@
   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
     "message": "请按顺序选择你的助记词"
   },
+  "wallet_extension_ton_title_input_address": {
+    "message": "选择导入类型"
+  },
   "wallet_extension_send_status_speedingup": {
     "message": "加速中"
   },
@@ -1700,6 +1712,9 @@
   "wallet_extension_send_emptystate_no_inscription": {
     "message": "当前没有可发送的铭文"
   },
+  "wallet_extension_btc_import_tab_title_network": {
+    "message": "BTC 网络"
+  },
   "wallet_extension_default_radio_okx_preferred": {
     "message": "可点击其他钱包唤起欧易钱包"
   },
@@ -1715,6 +1730,9 @@
   "wallet_extension_option_singlechain": {
     "message": "切换 EVM 网络"
   },
+  "wallet_extension_ton_desc_input_address": {
+    "message": "当前助记词支持生成不同的 TON 网络地址，请选择要导入的类型。"
+  },
   "wallet_extension_transaction_input_label_to": {
     "message": "接收地址"
   },
@@ -1726,6 +1744,9 @@
   },
   "extension_defi_popup_emptystate_title_data_loading_fail": {
     "message": "数据加载失败，请稍后重试"
+  },
+  "wallet_extension_multisend_toast_gas_fee_info": {
+    "message": "每个钱包将额外发送 0.01 TON 作为预留的网络费用。交易完成后，未使用的部分将退还。"
   },
   "wallet_extension_home_popup_btn_maybe_later": {
     "message": "稍后再说"
@@ -2792,6 +2813,9 @@
   "extension_wallet_verification_title_account_mismatch": {
     "message": "你登录的交易所账号与钱包不匹配"
   },
+  "wallet_extension_status_tag_withdraw": {
+    "message": "提币中"
+  },
   "wallet_extension_top_subtitle_turnon_ledger": {
     "message": "在 “Ledger Live” 中点击 “添加账户”，“选择加密资产” 即可在硬件中添加应用程序。"
   },
@@ -2971,6 +2995,9 @@
   },
   "developer_mode_send_toast_nonetoken": {
     "message": "当前没有币种可以发送"
+  },
+  "wallet_extension_fee_desc_default_gas": {
+    "message": "费用可能随网络状况变化上涨"
   },
   "wallet_extension_text_cancel_listing": {
     "message": "下架"
@@ -4364,6 +4391,9 @@
   "commonall_filter_title_free": {
     "message": "免费"
   },
+  "wallet_extension_ton_select_multi_chain_wallet": {
+    "message": "多链钱包"
+  },
   "wallet_extension_overview_tab_farm": {
     "message": "挖矿"
   },
@@ -4721,6 +4751,9 @@
   "commonall_enterfield_title_to": {
     "message": "获得"
   },
+  "wallet_extension_switch_drawer_current_account": {
+    "message": "当前钱包账户"
+  },
   "wallet_extension_private_key_text_separate_private_keys": {
     "message": "批量粘贴私钥，用标点或换行分隔多个私钥"
   },
@@ -4937,6 +4970,9 @@
   "wallet_extension_addaccount_adding_maintitle_create_failed": {
     "message": "添加失败"
   },
+  "wallet_extension_switch_drawer_dapp_account": {
+    "message": "当前 {dapp} 账户"
+  },
   "wallet_extension_hardware_btn_delete_account": {
     "message": "删除账户"
   },
@@ -5020,6 +5056,9 @@
   },
   "wallet_brc20_reminder_card_state_looked_tooltips": {
     "message": "该铭文正在交易中，在交易确认之前无法交易或转移"
+  },
+  "wallet_extension_ton_select_ton_address": {
+    "message": "TON 地址：{address}"
   },
   "wallet_extension_account_header_title_select_wallet": {
     "message": "选择钱包"
@@ -5191,6 +5230,9 @@
   },
   "wallet_extension_receive_title_set_amount": {
     "message": "设置数额"
+  },
+  "wallet_extension_bot_checkbox_default_gas": {
+    "message": "保存为 {networkName} 的默认网络费用设置"
   },
   "extension_wallet_list_text_mev_protection": {
     "message": "MEV 保护"
@@ -7109,6 +7151,9 @@
   "commonall_button_title_faq": {
     "message": "常见问题"
   },
+  "wallet_extension_btc_tooltip_support_networks": {
+    "message": "支持以下 BTC 网络：{network}"
+  },
   "wallet_home_btn_manage_crypto": {
     "message": "币种管理"
   },
@@ -7201,6 +7246,9 @@
   },
   "wallet_extension_errormsg_unavailable_address": {
     "message": "当前地址存在异常，为保护您的资产，请切换至其他地址"
+  },
+  "wallet_extension_btc_tab_desc_network": {
+    "message": "已支持 {number}+ BTC 网络"
   },
   "wallet_extension_list_alert_frozen_loss": {
     "message": "冻结将会损失 BRC 20 代币和对应 NFT"
@@ -7820,6 +7868,9 @@
   "wallet_extension_solana_toast_no_contract_loss": {
     "message": "合约不存在，继续交易可能导致资产损失，请检查网络"
   },
+  "wallet_extension_switch_drawer_title_inconsistent": {
+    "message": "当前钱包账户与 {DApp} 账户不一致，是否切换？"
+  },
   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
     "message": "{chainSymbol} 余额不足以支付网络费用"
   },
@@ -8119,6 +8170,9 @@
   },
   "wallet_extension_home_text_add_multiple": {
     "message": "一键添加多个钱包账户，高效快捷"
+  },
+  "wallet_extension_ton_select_ton_wallet": {
+    "message": "TON 单链钱包"
   },
   "wallet_extension_transfer_text_phishing_risk": {
     "message": "{address} 已判定为钓鱼活动。警惕可能发生的钓鱼攻击"

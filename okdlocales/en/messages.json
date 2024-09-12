@@ -605,7 +605,7 @@
   "trade_charts_tooltips_symbol_changes_on_all_charts": "Symbol changes on all charts displayed",
   "trade_charts_tooltips_text_color": "Text color",
   "trade_charts_tooltips_time_management": "Time tools",
-  "trade_charts_tooltips_time_management_new_feature": "Try the new time anchor to easily view charts across different intervals.",
+  "trade_charts_tooltips_time_management_new_feature": "Try the new time anchor to easily pinpoint chart times across different intervals.",
   "trade_charts_tooltips_timeframe_changes_on_all_charts": "Time changes on all charts displayed",
   "trade_charts_tooltips_title_estimated_pnl": "Estimated PnL",
   "trade_charts_tooltips_trade_panel": "Open/close order panel",

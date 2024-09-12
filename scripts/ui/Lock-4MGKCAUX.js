@@ -1,0 +1,6 @@
+import{a}from"./chunk-FRG4JWBM.js";import{j as i}from"./chunk-FCCCJLF6.js";import{a as r}from"./chunk-4Z4GXCHB.js";import{ib as c,y as k}from"./chunk-FK3ETA6I.js";import"./chunk-QZDHFNHK.js";import{i as p,o as U}from"./chunk-LHHZ5TAA.js";import"./chunk-PI6QLVMS.js";import"./chunk-QY4HIIR3.js";import"./chunk-XFWUEPSK.js";import"./chunk-MNNY2ODL.js";import"./chunk-C5ZJZEPI.js";import"./chunk-LGHM3MOC.js";import"./chunk-OXVQDEZW.js";import"./chunk-X3G52GGX.js";import"./chunk-WUKT6J7S.js";import"./chunk-FTJCOLFJ.js";import"./chunk-QG673PNL.js";import"./chunk-ZUFARSFM.js";import"./chunk-6MTHEPGF.js";import"./chunk-ZQQ7HNWV.js";import"./chunk-Y62GSKHT.js";import"./chunk-2BXFMFMK.js";import"./chunk-ZOQTSYT4.js";import{a as h}from"./chunk-ADZWCU3Q.js";import"./chunk-FDI7TLXH.js";import"./chunk-L4HTIIR6.js";import"./chunk-733NI6T7.js";import"./chunk-EYWGNJVY.js";import"./chunk-TBVIGR5T.js";import"./chunk-FHQVMQUK.js";import"./chunk-XNS2NFYY.js";import{f as e,m as s,o as m}from"./chunk-REC7XVZY.js";s();m();var f=e(h()),o=e(k());U();var O=l=>{let{history:t}=l,n=(0,o.useSelector)(c),u=(0,o.useDispatch)();return i(async()=>{if(n)try{await u(p()),t.push(r)}catch(d){console.log(d)}else t.replace(r)}),f.default.createElement(a,null)};export{O as default};
+
+window.inOKXExtension = true;
+window.ASSETS_BUILD_TYPE = "prepub";
+
+//# sourceMappingURL=Lock-4MGKCAUX.js.map

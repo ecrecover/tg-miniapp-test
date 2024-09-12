@@ -90,7 +90,7 @@
     "message": "Status penjualan"
   },
   "wallet_extension_swapforgas_dialog_desc_netfee_detailb": {
-    "message": "The estimated network fee for this swap:\n{value3} ({swapFee} {token3})"
+    "message": "Estimasi biaya jaringan untuk swap ini:\n{value3} ({swapFee} {token3})"
   },
   "wallet_dapp_connection_modal_connected_project": {
     "message": "Hubungkan ke {origin}"
@@ -117,7 +117,7 @@
     "message": "Buat Wallet"
   },
   "wallet_extension_swapforgas_dialog_desc_netfee_detaila": {
-    "message": "The estimated network fee for this fee transfer:\n{value2} ({transferFee} {token2})"
+    "message": "Estimasi biaya jaringan untuk transfer biaya ini:\n{value2} ({transferFee} {token2})"
   },
   "btcnft_gas_label_pay_gas_with": {
     "message": "Bayar biaya jaringan dengan"
@@ -129,7 +129,7 @@
     "message": "Rata-Rata"
   },
   "extension_defi_top_subtitle_use_utxo_lose_assets_icu": {
-    "message": "The below UTXOs will be used in this transaction. After the transaction, all your assets (except {chainName}) in these UTXOs will be sent or burned."
+    "message": "UTXO di bawah akan digunakan dalam transaksi ini. Setelah transaksi, semua aset Anda (kecuali {chainName}) yang ada di UTXO ini akan dikirim atau dibakar."
   },
   "extension_wallet_create_colored_cpu": {
     "message": "CPU"
@@ -635,6 +635,9 @@
   "extension_wallet_transaction_subtitle_multi_selectable": {
     "message": "Pilih format alamat yang ingin digunakan"
   },
+  "wallet_extension_btc_tab_title_network": {
+    "message": "BTC networks"
+  },
   "wallet_extension_swapforgas_label_num_transactions": {
     "message": "≈ {num} transaksi"
   },
@@ -853,6 +856,9 @@
   },
   "wallet_extension_nft_popup_text_token_standard": {
     "message": "Standar token"
+  },
+  "wallet_extension_btc_tooltip_svm_network_address": {
+    "message": "Your address is a BTC network address. You can use it to manage your assets on other BTC-compatible networks."
   },
   "wallet_extension_inscription_text_hex_data_optional": {
     "message": "Data HEX (Opsional)"
@@ -1141,6 +1147,9 @@
   },
   "wallet_extension_password_popup_btn_maybe_later": {
     "message": "Lain Kali"
+  },
+  "extension_wallet_available_coin_balance": {
+    "message": "Available {coin}"
   },
   "wallet_extension_popup_btn_confirm": {
     "message": "Konfirmasi"
@@ -1479,7 +1488,7 @@
     "message": "Memo Disalin"
   },
   "extension_defi_popup_desc_btc_address_type_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Jaringan {chainName} mendukung 4 jenis alamat, yang terlihat di wallet yang dipilih. Aset dapat ditransfer di antara masing-masing alamat tersebut. Alamat Taproot menyediakan biaya lebih rendah dan skalabilitas lebih baik."
   },
   "extension_settings_link_linkwallet": {
     "message": "https://www.okx.com/id/help/web3-security-audit-reports"
@@ -1646,6 +1655,9 @@
   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
     "message": "Pilih setiap kata secara berurutan"
   },
+  "wallet_extension_ton_title_input_address": {
+    "message": "Import address"
+  },
   "wallet_extension_send_status_speedingup": {
     "message": "Mempercepat"
   },
@@ -1700,6 +1712,9 @@
   "wallet_extension_send_emptystate_no_inscription": {
     "message": "Inskripsi tidak dikirimkan"
   },
+  "wallet_extension_btc_import_tab_title_network": {
+    "message": "BTC networks"
+  },
   "wallet_extension_default_radio_okx_preferred": {
     "message": "Langsung ke OKX Wallet jika mengeklik wallet lain"
   },
@@ -1715,6 +1730,9 @@
   "wallet_extension_option_singlechain": {
     "message": "Beralih ke jaringan EVM"
   },
+  "wallet_extension_ton_desc_input_address": {
+    "message": "You can generate different TON addresses using the current seed phrase. Select the type you’d like to import."
+  },
   "wallet_extension_transaction_input_label_to": {
     "message": "Ke"
   },
@@ -1726,6 +1744,9 @@
   },
   "extension_defi_popup_emptystate_title_data_loading_fail": {
     "message": "Gagal memuat data. Silakan coba lagi nanti."
+  },
+  "wallet_extension_multisend_toast_gas_fee_info": {
+    "message": "Each wallet will send an extra 0.01 TON for the network fee. Any unused amount will be refunded to your wallet after the transaction."
   },
   "wallet_extension_home_popup_btn_maybe_later": {
     "message": "Lain Kali"
@@ -2235,13 +2256,13 @@
     "message": "Toolkit"
   },
   "wallet_extension_swapforgas_dialog_desc_netfee_details1": {
-    "message": "The estimated network fee for this swap for gas consists of three parts:"
+    "message": "Estimasi biaya jaringan untuk swap ini terdiri dari tiga bagian:"
   },
   "developer_mode_manage_maintitle_customcpt": {
     "message": "Kripto kustom"
   },
   "wallet_extension_swapforgas_dialog_desc_netfee_details2": {
-    "message": "OKX Wallet will cover the network fee for a swap for gas first, and later deduct it from the amount you received after the swap."
+    "message": "OKX Wallet akan membayar biaya jaringan untuk swap gas terlebih dahulu, dan kemudian menguranginya dari jumlah yang Anda terima setelah swap."
   },
   "wallet_extension_account_alert_freeze": {
     "message": "Akun ditangguhkan"
@@ -2792,6 +2813,9 @@
   "extension_wallet_verification_title_account_mismatch": {
     "message": "Akun bursa Anda tidak cocok dengan Wallet tanpa kunci Anda"
   },
+  "wallet_extension_status_tag_withdraw": {
+    "message": "Withdrawing"
+  },
   "wallet_extension_top_subtitle_turnon_ledger": {
     "message": "Tambahkan akun untuk aset Anda di Ledger Live"
   },
@@ -2971,6 +2995,9 @@
   },
   "developer_mode_send_toast_nonetoken": {
     "message": "Belum ada kripto di Wallet"
+  },
+  "wallet_extension_fee_desc_default_gas": {
+    "message": "The estimated network fee may increase if network conditions change."
   },
   "wallet_extension_text_cancel_listing": {
     "message": "Batalkan penjualan"
@@ -3333,7 +3360,7 @@
     "message": "Batas gas minimal harus {minimumGasLimit}"
   },
   "wallet_extension_sonic_header_btc_address_icu": {
-    "message": "{chainName} address"
+    "message": "Alamat {chainName}"
   },
   "commonall_datetime_abbr_month": {
     "message": "B"
@@ -3966,7 +3993,7 @@
     "message": "Swap menjadi gas gagal. Hal ini mungkin disebabkan oleh:\n· Saldo tidak cukup karena order berturut-turut\n· Transaksi diganti oleh transaksi berikutnya karena order berturut-turut\nPastikan untuk memulai transaksi berikutnya hanya setelah swap menjadi gas selesai."
   },
   "extension_defi_mid_tooltips_asset_in_4address_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Jaringan {chainName} mendukung 4 jenis alamat, yang terlihat di wallet yang dipilih. Aset dapat ditransfer di antara masing-masing alamat tersebut. Alamat Taproot menyediakan biaya lebih rendah dan skalabilitas lebih baik."
   },
   "wallet_extension_hover_change_address_format": {
     "message": "Klik Untuk Mengatur Format Alamat Default"
@@ -4364,6 +4391,9 @@
   "commonall_filter_title_free": {
     "message": "Gratis"
   },
+  "wallet_extension_ton_select_multi_chain_wallet": {
+    "message": "Multichain wallet"
+  },
   "wallet_extension_overview_tab_farm": {
     "message": "Farm"
   },
@@ -4680,7 +4710,7 @@
     "message": "{num} jaringan terhubung"
   },
   "extension_defi_top_tooltips_only_usage_utxo_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Jaringan {chainName} mendukung 4 jenis alamat, yang terlihat di wallet yang dipilih. Aset dapat ditransfer di antara masing-masing alamat tersebut. Alamat Taproot menyediakan biaya lebih rendah dan skalabilitas lebih baik."
   },
   "wallet_home_backup_warning_maintitle_not_backup": {
     "message": "Wallet Anda belum dicadangkan"
@@ -4720,6 +4750,9 @@
   },
   "commonall_enterfield_title_to": {
     "message": "Ke"
+  },
+  "wallet_extension_switch_drawer_current_account": {
+    "message": "Current wallet account"
   },
   "wallet_extension_private_key_text_separate_private_keys": {
     "message": "Setiap kunci pribadi harus dipisahkan dengan karakter atau baris baru"
@@ -4937,6 +4970,9 @@
   "wallet_extension_addaccount_adding_maintitle_create_failed": {
     "message": "Tidak Dapat Menambahkan Akun"
   },
+  "wallet_extension_switch_drawer_dapp_account": {
+    "message": "Current {dapp} account"
+  },
   "wallet_extension_hardware_btn_delete_account": {
     "message": "Hapus Akun"
   },
@@ -5020,6 +5056,9 @@
   },
   "wallet_brc20_reminder_card_state_looked_tooltips": {
     "message": "Inskripsi ini sedang ditransaksikan sehingga tidak dapat ditransaksikan lagi atau ditransfer hingga transaksi tersebut dikonfirmasi"
+  },
+  "wallet_extension_ton_select_ton_address": {
+    "message": "TON address: {address}"
   },
   "wallet_extension_account_header_title_select_wallet": {
     "message": "Pilih wallet"
@@ -5191,6 +5230,9 @@
   },
   "wallet_extension_receive_title_set_amount": {
     "message": "Tetapkan jumlah"
+  },
+  "wallet_extension_bot_checkbox_default_gas": {
+    "message": "Set as default for all future transactions on {networkName}"
   },
   "extension_wallet_list_text_mev_protection": {
     "message": "Proteksi MEV"
@@ -5529,7 +5571,7 @@
     "message": "Jumlah"
   },
   "extension_defi_bot_popuptext_current_balance_coverage_icu": {
-    "message": "The available balance excludes {chainName} locked by inscriptions and small amounts of {chainName} that’ll increase network fees."
+    "message": "Saldo tersedia tidak termasuk {chainName} yang terkunci oleh inskripsi dan jumlah kecil {chainName} yang akan meningkatkan biaya jaringan."
   },
   "wallet_extension_home_link_learn_more": {
     "message": "Pelajari Selengkapnya"
@@ -5643,7 +5685,7 @@
     "message": "Alamat ini tidak ada di ekstensi Wallet Anda"
   },
   "extension_defi_top_tooltips_only_usage_utxo_value_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "Jaringan {chainName} mendukung 4 jenis alamat, yang terlihat di wallet yang dipilih. Aset dapat ditransfer di antara masing-masing alamat tersebut. Alamat Taproot menyediakan biaya lebih rendah dan skalabilitas lebih baik."
   },
   "wallet_extension_transaction_tab_params": {
     "message": "Params"
@@ -5796,7 +5838,7 @@
     "message": "Berikutnya"
   },
   "extension_defi_mid_subtitle_utxo_cover_fee_icu": {
-    "message": "The below UTXOs will be used to cover network fee in this transaction. After the transaction, all your assets (except {chainName}) in these UTXOs will be sent or burned."
+    "message": "UTXO di bawah akan digunakan untuk membayar biaya jaringan dalam transaksi ini. Setelah transaksi, semua aset Anda (kecuali {chainName}) yang ada di UTXO ini akan dikirim atau dibakar."
   },
   "wallet_extension_header_subtitle_connected_dapp": {
     "message": "DApp Terhubung"
@@ -6327,7 +6369,7 @@
     "message": "Selesaikan semua transaksi terlebih dahulu."
   },
   "extension_wallet_transaction_notif_address_copied_icu": {
-    "message": "{chainName} {address} address copied"
+    "message": "Alamat {chainName} {address} disalin"
   },
   "wallet_extension_cryptodetail_tooltips_max_supply": {
     "message": "Jumlah kripto tertinggi yang dapat beredar saat kripto tersebut ada.\n\nJika pasokan kripto tidak terbatas atau tidak diverifikasi, pasokan maksimum hanya akan ditampilkan sebagai \"tidak dapat ditentukan\"."
@@ -6438,7 +6480,7 @@
     "message": "Mode safe"
   },
   "extension_wallet_receive_text_supported_only_icu": {
-    "message": "Only {chainName} assets (except BRC-20, SRC-20, and ARC-20 assets) supported"
+    "message": "Hanya aset {chainName} (kecuali aset BRC-20, SRC-20, dan ARC-20) yang didukung"
   },
   "wallet_extension_btn_backup_seed_phrase_now": {
     "message": "Catat seed phrase"
@@ -6897,7 +6939,7 @@
     "message": "Saldo untuk biaya jaringan tidak cukup. Tambahkan dana ke akun Anda."
   },
   "extension_defi_popup_desc_new_address_default_icu": {
-    "message": "By confirming address type, the new address will be the default address for all your {chainName} transactions in OKX Wallet."
+    "message": "Setelah mengonfirmasi jenis alamat, alamat baru akan menjadi alamat default untuk semua transaksi {chainName} Anda di OKX Wallet."
   },
   "wallet_extension_mid_btn_retry": {
     "message": "Coba lagi"
@@ -6948,7 +6990,7 @@
     "message": "Batas gas harus lebih dari 21.000"
   },
   "extension_wallet_btc_error_notif_insufficient_btc_icu": {
-    "message": "Insufficient balance since {chainName} has been locked by a pending transaction or NFT. You can wait for the transaction to complete or unlock UTXOs."
+    "message": "Saldo tidak mencukupi karena {chainName} telah dikunci terkait adanya transaksi atau NFT yang tertunda. Tunggu sampai transaksi untuk menyelesaikan atau membuka UTXO."
   },
   "extension_wallet_transaction_item_inscribe_totalfee": {
     "message": "Total"
@@ -7109,6 +7151,9 @@
   "commonall_button_title_faq": {
     "message": "FAQ"
   },
+  "wallet_extension_btc_tooltip_support_networks": {
+    "message": "BTC networks supported: {network}"
+  },
   "wallet_home_btn_manage_crypto": {
     "message": "Kelola"
   },
@@ -7201,6 +7246,9 @@
   },
   "wallet_extension_errormsg_unavailable_address": {
     "message": "Alamat saat ini berisiko. Untuk melindungi aset Anda, pindah ke alamat lain."
+  },
+  "wallet_extension_btc_tab_desc_network": {
+    "message": "We now support {number}+ BTC networks"
   },
   "wallet_extension_list_alert_frozen_loss": {
     "message": "Token BRC-20 dan NFT terkait akan hilang karena pembekuan"
@@ -7431,7 +7479,7 @@
     "message": "Konfirmasi Tanda Tangan Anda"
   },
   "wallet_extension_bot_text_confirm_unoccupy_icu": {
-    "message": "Once the UTXOs are unlocked, the inscription or Rune assets included in them will be treated as {chainName}. You may lose these assets in transactions. Proceed with caution."
+    "message": "Setelah UTXO dibuka, inskripsi atau aset Rune yang termasuk di dalamnya akan diperlakukan sebagai {chainName}. Anda mungkin kehilangan aset-aset ini dalam transaksi. Lanjutkan dengan hati-hati."
   },
   "developer_mode_tag_text_waiting": {
     "message": "Menunggu"
@@ -7820,6 +7868,9 @@
   "wallet_extension_solana_toast_no_contract_loss": {
     "message": "Kontrak ini tidak ada. Periksa jaringan yang dipilih sebelum melanjutkan. Jika tidak, Anda dapat kehilangan aset Anda."
   },
+  "wallet_extension_switch_drawer_title_inconsistent": {
+    "message": "Current wallet account doesn’t match the {DApp} account"
+  },
   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
     "message": "{chainSymbol} tidak cukup untuk membayar biaya jaringan"
   },
@@ -8120,6 +8171,9 @@
   "wallet_extension_home_text_add_multiple": {
     "message": "Tambahkan beberapa akun wallet sekaligus"
   },
+  "wallet_extension_ton_select_ton_wallet": {
+    "message": "TON wallet"
+  },
   "wallet_extension_transfer_text_phishing_risk": {
     "message": "{address} ditandai untuk aktivitas pengelabuan. Waspadalah akan kemungkinan upaya pengelabuan."
   },
@@ -8232,7 +8286,7 @@
     "message": "Mode pengembang"
   },
   "extension_defi_errortip_not_enough_btc_icu": {
-    "message": "You have insufficient {chainName} balance for network fee."
+    "message": "Saldo {chainName} tidak cukup untuk biaya jaringan."
   },
   "wallet_extension_history_list_revoke_approval": {
     "message": "Cabut persetujuan {symbol}"
@@ -8466,7 +8520,7 @@
     "message": "Tanya Jawab"
   },
   "extension_defi_popup_title_btc_address_type_icu": {
-    "message": "{chainName} address type"
+    "message": "Jenis alamat {chainName}"
   },
   "extension_wallet_contractual_interaction_wallet_unavailable": {
     "message": "Wallet Anda saat ini tidak mendukung transaksi ini. Ganti Wallet dan coba lagi"

@@ -48,7 +48,7 @@
     "message": "Contract interaction"
   },
   "wallet_extension_fractal_desc_transaction_risky": {
-    "message": "Unable to decode the UTXO assets for signing. Continuing may result in asset loss. Ensure you fully trust this website. Learn more about {case}"
+    "message": "Unable to decode the UTXO assets for signing. Proceeding may result in asset loss. Make sure you fully trust this website. Learn more about {case}"
   },
   "commonall_column_colheader_rank": {
     "message": "Rank"
@@ -635,6 +635,9 @@
   "extension_wallet_transaction_subtitle_multi_selectable": {
     "message": "Select the address format you want to use"
   },
+  "wallet_extension_btc_tab_title_network": {
+    "message": "BTC networks"
+  },
   "wallet_extension_swapforgas_label_num_transactions": {
     "message": "≈ {num} transactions"
   },
@@ -853,6 +856,9 @@
   },
   "wallet_extension_nft_popup_text_token_standard": {
     "message": "Token standard"
+  },
+  "wallet_extension_btc_tooltip_svm_network_address": {
+    "message": "Your address is a BTC network address. You can use it to manage your assets on other BTC-compatible networks."
   },
   "wallet_extension_inscription_text_hex_data_optional": {
     "message": "HEX data (optional)"
@@ -1141,6 +1147,9 @@
   },
   "wallet_extension_password_popup_btn_maybe_later": {
     "message": "Maybe later"
+  },
+  "extension_wallet_available_coin_balance": {
+    "message": "Available {coin}"
   },
   "wallet_extension_popup_btn_confirm": {
     "message": "Confirm"
@@ -1646,6 +1655,9 @@
   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
     "message": "Select each word in order"
   },
+  "wallet_extension_ton_title_input_address": {
+    "message": "Import address"
+  },
   "wallet_extension_send_status_speedingup": {
     "message": "Speeding up"
   },
@@ -1700,6 +1712,9 @@
   "wallet_extension_send_emptystate_no_inscription": {
     "message": "No inscriptions to send"
   },
+  "wallet_extension_btc_import_tab_title_network": {
+    "message": "BTC networks"
+  },
   "wallet_extension_default_radio_okx_preferred": {
     "message": "Direct to OKX Wallet if clicking other wallets"
   },
@@ -1715,6 +1730,9 @@
   "wallet_extension_option_singlechain": {
     "message": "Switch EVM networks"
   },
+  "wallet_extension_ton_desc_input_address": {
+    "message": "You can generate different TON addresses using the current seed phrase. Select the type you’d like to import."
+  },
   "wallet_extension_transaction_input_label_to": {
     "message": "To"
   },
@@ -1726,6 +1744,9 @@
   },
   "extension_defi_popup_emptystate_title_data_loading_fail": {
     "message": "Data loading failed. Try again later."
+  },
+  "wallet_extension_multisend_toast_gas_fee_info": {
+    "message": "Each wallet will send an extra 0.01 TON for the network fee. Any unused amount will be refunded to your wallet after the transaction."
   },
   "wallet_extension_home_popup_btn_maybe_later": {
     "message": "Maybe later"
@@ -2792,6 +2813,9 @@
   "extension_wallet_verification_title_account_mismatch": {
     "message": "Your exchange account doesn’t match your keyless wallet"
   },
+  "wallet_extension_status_tag_withdraw": {
+    "message": "Withdrawing"
+  },
   "wallet_extension_top_subtitle_turnon_ledger": {
     "message": "Add an account for your asset in Ledger Live"
   },
@@ -2971,6 +2995,9 @@
   },
   "developer_mode_send_toast_nonetoken": {
     "message": "No crypto to send"
+  },
+  "wallet_extension_fee_desc_default_gas": {
+    "message": "The estimated network fee may increase if network conditions change."
   },
   "wallet_extension_text_cancel_listing": {
     "message": "Cancel listing"
@@ -4364,6 +4391,9 @@
   "commonall_filter_title_free": {
     "message": "Free"
   },
+  "wallet_extension_ton_select_multi_chain_wallet": {
+    "message": "Multichain wallet"
+  },
   "wallet_extension_overview_tab_farm": {
     "message": "Farm"
   },
@@ -4721,6 +4751,9 @@
   "commonall_enterfield_title_to": {
     "message": "To"
   },
+  "wallet_extension_switch_drawer_current_account": {
+    "message": "Current wallet account"
+  },
   "wallet_extension_private_key_text_separate_private_keys": {
     "message": "Each private key should be separated by characters or a new line"
   },
@@ -4937,6 +4970,9 @@
   "wallet_extension_addaccount_adding_maintitle_create_failed": {
     "message": "Couldn't add accounts"
   },
+  "wallet_extension_switch_drawer_dapp_account": {
+    "message": "Current {dapp} account"
+  },
   "wallet_extension_hardware_btn_delete_account": {
     "message": "Delete account"
   },
@@ -5020,6 +5056,9 @@
   },
   "wallet_brc20_reminder_card_state_looked_tooltips": {
     "message": "This inscription is in trade and can’t be traded or transferred until the transaction is confirmed"
+  },
+  "wallet_extension_ton_select_ton_address": {
+    "message": "TON address: {address}"
   },
   "wallet_extension_account_header_title_select_wallet": {
     "message": "Select wallet"
@@ -5191,6 +5230,9 @@
   },
   "wallet_extension_receive_title_set_amount": {
     "message": "Set amount"
+  },
+  "wallet_extension_bot_checkbox_default_gas": {
+    "message": "Set as default for all future transactions on {networkName}"
   },
   "extension_wallet_list_text_mev_protection": {
     "message": "MEV protection"
@@ -7109,6 +7151,9 @@
   "commonall_button_title_faq": {
     "message": "FAQ"
   },
+  "wallet_extension_btc_tooltip_support_networks": {
+    "message": "BTC networks supported: {network}"
+  },
   "wallet_home_btn_manage_crypto": {
     "message": "Manage crypto"
   },
@@ -7201,6 +7246,9 @@
   },
   "wallet_extension_errormsg_unavailable_address": {
     "message": "The current address is risky. To protect your assets, switch to another address."
+  },
+  "wallet_extension_btc_tab_desc_network": {
+    "message": "We now support {number}+ BTC networks"
   },
   "wallet_extension_list_alert_frozen_loss": {
     "message": "The freeze will cause the loss of BRC-20 tokens and corresponding NFTs"
@@ -7820,6 +7868,9 @@
   "wallet_extension_solana_toast_no_contract_loss": {
     "message": "This contract doesn’t exist. Check the selected network before you continue. Otherwise, you may lose your assets."
   },
+  "wallet_extension_switch_drawer_title_inconsistent": {
+    "message": "Current wallet account doesn’t match the {DApp} account"
+  },
   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
     "message": "Insufficient {chainSymbol} to pay for network fee"
   },
@@ -8119,6 +8170,9 @@
   },
   "wallet_extension_home_text_add_multiple": {
     "message": "Add multiple wallet accounts in one go"
+  },
+  "wallet_extension_ton_select_ton_wallet": {
+    "message": "TON wallet"
   },
   "wallet_extension_transfer_text_phishing_risk": {
     "message": "{address} is flagged for phishing activity. Be aware of possible phishing attempts."

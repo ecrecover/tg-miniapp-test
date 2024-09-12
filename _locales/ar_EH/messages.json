@@ -129,7 +129,7 @@
     "message": "متوسط"
   },
   "extension_defi_top_subtitle_use_utxo_lose_assets_icu": {
-    "message": "The below UTXOs will be used in this transaction. After the transaction, all your assets (except {chainName}) in these UTXOs will be sent or burned."
+    "message": "ستُستخدم نواتج المعاملات غير المستخدمة (UTXOs) أدناه في هذه المعاملة. وبعد المعاملة، ستُرسَل أو ستُحرَق جميع أصولك (ما عدا {chainName}) في هذه النواتج."
   },
   "extension_wallet_create_colored_cpu": {
     "message": "CPU"
@@ -635,6 +635,9 @@
   "extension_wallet_transaction_subtitle_multi_selectable": {
     "message": "تحديد تنسيق العنوان الذي تريد استخدامه"
   },
+  "wallet_extension_btc_tab_title_network": {
+    "message": "BTC networks"
+  },
   "wallet_extension_swapforgas_label_num_transactions": {
     "message": "≈ {num} من التعاملات"
   },
@@ -853,6 +856,9 @@
   },
   "wallet_extension_nft_popup_text_token_standard": {
     "message": "معيار العملة الرمزية"
+  },
+  "wallet_extension_btc_tooltip_svm_network_address": {
+    "message": "Your address is a BTC network address. You can use it to manage your assets on other BTC-compatible networks."
   },
   "wallet_extension_inscription_text_hex_data_optional": {
     "message": "بيانات HEX (اختياري)"
@@ -1141,6 +1147,9 @@
   },
   "wallet_extension_password_popup_btn_maybe_later": {
     "message": "ربما لاحقًا"
+  },
+  "extension_wallet_available_coin_balance": {
+    "message": "Available {coin}"
   },
   "wallet_extension_popup_btn_confirm": {
     "message": "تأكيد"
@@ -1479,7 +1488,7 @@
     "message": "تم نسخ المذكرة"
   },
   "extension_defi_popup_desc_btc_address_type_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "تدعم شبكة {chainName} أربعة أنواع من العناوين، وتكون مرئية في محافظ محددة. ويُمكن نقل الأصول بين كل من هذه العناوين. وتوفر عناوين Taproot رسومًا منخفضة وقابلية توسع مُحسنة."
   },
   "extension_settings_link_linkwallet": {
     "message": "https://www.okx.com/ar/help/web3-security-audit-reports"
@@ -1646,6 +1655,9 @@
   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
     "message": "حدد كل كلمة بالترتيب"
   },
+  "wallet_extension_ton_title_input_address": {
+    "message": "Import address"
+  },
   "wallet_extension_send_status_speedingup": {
     "message": "جارٍ التسريع"
   },
@@ -1700,6 +1712,9 @@
   "wallet_extension_send_emptystate_no_inscription": {
     "message": "لا توجد نقوش مُميِّزة لإرسالها"
   },
+  "wallet_extension_btc_import_tab_title_network": {
+    "message": "BTC networks"
+  },
   "wallet_extension_default_radio_okx_preferred": {
     "message": "مباشرة إلى محفظة OKX Wallet في حال النقر على محافظ أخرى"
   },
@@ -1715,6 +1730,9 @@
   "wallet_extension_option_singlechain": {
     "message": "تبديل شبكات \"آلة Ethereum الافتراضية\""
   },
+  "wallet_extension_ton_desc_input_address": {
+    "message": "You can generate different TON addresses using the current seed phrase. Select the type you’d like to import."
+  },
   "wallet_extension_transaction_input_label_to": {
     "message": "إلى"
   },
@@ -1726,6 +1744,9 @@
   },
   "extension_defi_popup_emptystate_title_data_loading_fail": {
     "message": "فشل تحميل البيانات. حاول مرة أخرى لاحقًا."
+  },
+  "wallet_extension_multisend_toast_gas_fee_info": {
+    "message": "Each wallet will send an extra 0.01 TON for the network fee. Any unused amount will be refunded to your wallet after the transaction."
   },
   "wallet_extension_home_popup_btn_maybe_later": {
     "message": "ربما لاحقًا"
@@ -2792,6 +2813,9 @@
   "extension_wallet_verification_title_account_mismatch": {
     "message": "حساب منصة التداول الخاص بك لا يُطابق المحفظة بدون مفاتيح لديك"
   },
+  "wallet_extension_status_tag_withdraw": {
+    "message": "Withdrawing"
+  },
   "wallet_extension_top_subtitle_turnon_ledger": {
     "message": "قم بإضافة حساب للأصول الخاصة بك في Ledger Live"
   },
@@ -2971,6 +2995,9 @@
   },
   "developer_mode_send_toast_nonetoken": {
     "message": "لا توجد عملة رقمية لإرسالها"
+  },
+  "wallet_extension_fee_desc_default_gas": {
+    "message": "The estimated network fee may increase if network conditions change."
   },
   "wallet_extension_text_cancel_listing": {
     "message": "إلغاء الإدراج"
@@ -3333,7 +3360,7 @@
     "message": "يجب أن يكون الحد الأقصى للغاز على الأقل {minimumGasLimit}"
   },
   "wallet_extension_sonic_header_btc_address_icu": {
-    "message": "{chainName} address"
+    "message": "عنوان {chainName}"
   },
   "commonall_datetime_abbr_month": {
     "message": "شهر"
@@ -3966,7 +3993,7 @@
     "message": "تتعذر المبادلة بالغاز. قد يكون سبب ذلك:\n· عدم كفاية الرصيد بسبب الطلبات المتتالية\n· استبدال المعاملة بسبب الطلبات المتتالية\nتأكد من بدء معاملات أخرى بعد اكتمال عقد المبادلة بالغاز فقط."
   },
   "extension_defi_mid_tooltips_asset_in_4address_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "تدعم شبكة {chainName} أربعة أنواع من العناوين، وتكون مرئية في محافظ محددة. ويُمكن نقل الأصول بين كل من هذه العناوين. وتوفر عناوين Taproot رسومًا منخفضة وقابلية توسع مُحسنة."
   },
   "wallet_extension_hover_change_address_format": {
     "message": "انقر لتعيين تنسيق العنوان الافتراضي"
@@ -4364,6 +4391,9 @@
   "commonall_filter_title_free": {
     "message": "مجانًا"
   },
+  "wallet_extension_ton_select_multi_chain_wallet": {
+    "message": "Multichain wallet"
+  },
   "wallet_extension_overview_tab_farm": {
     "message": "جني العائدات"
   },
@@ -4680,7 +4710,7 @@
     "message": "{num} شبكة مرتبطة"
   },
   "extension_defi_top_tooltips_only_usage_utxo_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "تدعم شبكة {chainName} أربعة أنواع من العناوين، وتكون مرئية في محافظ محددة. ويُمكن نقل الأصول بين كل من هذه العناوين. وتوفر عناوين Taproot رسومًا منخفضة وقابلية توسع مُحسنة."
   },
   "wallet_home_backup_warning_maintitle_not_backup": {
     "message": "لم تحتفظ بنسخة احتياطية من محفظتك"
@@ -4720,6 +4750,9 @@
   },
   "commonall_enterfield_title_to": {
     "message": "إلى"
+  },
+  "wallet_extension_switch_drawer_current_account": {
+    "message": "Current wallet account"
   },
   "wallet_extension_private_key_text_separate_private_keys": {
     "message": "يجب فصل كل مفتاح خاص بحروف أو سطر جديد"
@@ -4937,6 +4970,9 @@
   "wallet_extension_addaccount_adding_maintitle_create_failed": {
     "message": "تعذرت إضافة حسابات"
   },
+  "wallet_extension_switch_drawer_dapp_account": {
+    "message": "Current {dapp} account"
+  },
   "wallet_extension_hardware_btn_delete_account": {
     "message": "حذف الحساب"
   },
@@ -5020,6 +5056,9 @@
   },
   "wallet_brc20_reminder_card_state_looked_tooltips": {
     "message": "هذا النقش الرقمي قيد التداول ولا يمكن تداوله أو تحويله إلا بعد تأكيد المعاملة"
+  },
+  "wallet_extension_ton_select_ton_address": {
+    "message": "TON address: {address}"
   },
   "wallet_extension_account_header_title_select_wallet": {
     "message": "اختيار محفظة"
@@ -5191,6 +5230,9 @@
   },
   "wallet_extension_receive_title_set_amount": {
     "message": "تحديد المبلغ"
+  },
+  "wallet_extension_bot_checkbox_default_gas": {
+    "message": "Set as default for all future transactions on {networkName}"
   },
   "extension_wallet_list_text_mev_protection": {
     "message": "حماية قيمة الأرباح الإضافية المحتملة للمُعدن (MEV)"
@@ -5529,7 +5571,7 @@
     "message": "المبلغ"
   },
   "extension_defi_bot_popuptext_current_balance_coverage_icu": {
-    "message": "The available balance excludes {chainName} locked by inscriptions and small amounts of {chainName} that’ll increase network fees."
+    "message": "الرصيد المتاح لا يشمل {chainName} المقفلة بالنقوش المُميّزة والمبالغ الصغيرة من {chainName} التي ستزيد من رسوم الشبكة."
   },
   "wallet_extension_home_link_learn_more": {
     "message": "اعرف المزيد"
@@ -5643,7 +5685,7 @@
     "message": "هذا العنوان غير موجود في إضافة المحفظة الخاصة بك"
   },
   "extension_defi_top_tooltips_only_usage_utxo_value_icu": {
-    "message": "The {chainName} network supports 4 address types, visible in select wallets. Assets can be transferred between each of these addresses. Taproot addresses provide lower fees and improved scalability."
+    "message": "تدعم شبكة {chainName} أربعة أنواع من العناوين، وتكون مرئية في محافظ محددة. ويُمكن نقل الأصول بين كل من هذه العناوين. وتوفر عناوين Taproot رسومًا منخفضة وقابلية توسع مُحسنة."
   },
   "wallet_extension_transaction_tab_params": {
     "message": "Params"
@@ -5796,7 +5838,7 @@
     "message": "التالي"
   },
   "extension_defi_mid_subtitle_utxo_cover_fee_icu": {
-    "message": "The below UTXOs will be used to cover network fee in this transaction. After the transaction, all your assets (except {chainName}) in these UTXOs will be sent or burned."
+    "message": "ستُستخدم نواتج المعاملات غير المستخدمة (UTXOs) أدناه لتغطية رسوم الشبكة في هذه المعاملة. وبعد المعاملة، ستُرسَل أو ستُحرَق جميع أصولك (ما عدا {chainName}) في هذه النواتج."
   },
   "wallet_extension_header_subtitle_connected_dapp": {
     "message": "التطبيقات اللامركزية المرتبطة"
@@ -6327,7 +6369,7 @@
     "message": "يُرجى معالجة كافة المعاملات أولًا."
   },
   "extension_wallet_transaction_notif_address_copied_icu": {
-    "message": "{chainName} {address} address copied"
+    "message": "تم نسخ عنوان ‏{chainName} ‏{address}"
   },
   "wallet_extension_cryptodetail_tooltips_max_supply": {
     "message": "أعلى قيمة للعملات الرقمية التي يمكن تداولها أثناء وجود العملات الرقمية.\nإذا كان عرض العملات الرقمية غير محدد أو لم يتم التحقق منه، فسوف يظهر الحد الأقصى للعرض على أنه \"تعذّر تقديره\"."
@@ -6438,7 +6480,7 @@
     "message": "الوضع الآمن"
   },
   "extension_wallet_receive_text_supported_only_icu": {
-    "message": "Only {chainName} assets (except BRC-20, SRC-20, and ARC-20 assets) supported"
+    "message": "يتم دعم أصول {chainName} فقط. (باستثناء أصول BRC-20 وSRC-20 وARC-20)"
   },
   "wallet_extension_btn_backup_seed_phrase_now": {
     "message": "تدوين العبارة الأولية"
@@ -6897,7 +6939,7 @@
     "message": "الرصيد غير كافٍ لرسوم الشبكة. أضف نقودًا إلى حسابك."
   },
   "extension_defi_popup_desc_new_address_default_icu": {
-    "message": "By confirming address type, the new address will be the default address for all your {chainName} transactions in OKX Wallet."
+    "message": "من خلال تأكيد نوع العنوان، سيكون العنوان الجديد هو العنوان الافتراضي لجميع معاملاتك على {chainName} في محفظة OKX."
   },
   "wallet_extension_mid_btn_retry": {
     "message": "إعادة المحاولة"
@@ -6948,7 +6990,7 @@
     "message": "يجب أن يتجاوز الحد الأقصى للغاز 21000"
   },
   "extension_wallet_btc_error_notif_insufficient_btc_icu": {
-    "message": "Insufficient balance since {chainName} has been locked by a pending transaction or NFT. You can wait for the transaction to complete or unlock UTXOs."
+    "message": "الرصيد غير كافٍ لأنه تم قفل {chainName} بسبب وجود معاملة معلقة أو رمز مميز غير قابل للاستبدال (NFT) معلق. يُمكنك الانتظار حتى يتم اكتمال المعاملة أو فتح قفل نواتج المعاملات غير المستخدمة (UTXOs)."
   },
   "extension_wallet_transaction_item_inscribe_totalfee": {
     "message": "الإجمالي"
@@ -7109,6 +7151,9 @@
   "commonall_button_title_faq": {
     "message": "الأسئلة الشائعة"
   },
+  "wallet_extension_btc_tooltip_support_networks": {
+    "message": "BTC networks supported: {network}"
+  },
   "wallet_home_btn_manage_crypto": {
     "message": "إدارة العملات الرقمية"
   },
@@ -7201,6 +7246,9 @@
   },
   "wallet_extension_errormsg_unavailable_address": {
     "message": "العنوان الحالي محفوف بالمخاطر. لحماية أصولك، بدِّل إلى عنوان آخر."
+  },
+  "wallet_extension_btc_tab_desc_network": {
+    "message": "We now support {number}+ BTC networks"
   },
   "wallet_extension_list_alert_frozen_loss": {
     "message": "سيؤدي التجميد إلى خسارة عملات BRC-20 الرمزية ورموز NFT المقابلة"
@@ -7431,7 +7479,7 @@
     "message": "تأكيد التوقيع"
   },
   "wallet_extension_bot_text_confirm_unoccupy_icu": {
-    "message": "Once the UTXOs are unlocked, the inscription or Rune assets included in them will be treated as {chainName}. You may lose these assets in transactions. Proceed with caution."
+    "message": "بمجرد فتح نواتج المعاملات غير المستخدمة (UTXOs)، فإن النقوش المُميّزة أو أصول Rune المدرجة فيها ستتم معاملتها بمثابة {chainName}. وقد تخسر هذه الأصول في المعاملات، لذا يُرجى المتابعة بحذر."
   },
   "developer_mode_tag_text_waiting": {
     "message": "قيد الانتظار"
@@ -7820,6 +7868,9 @@
   "wallet_extension_solana_toast_no_contract_loss": {
     "message": "هذا العقد غير موجود. تحقق من الشبكة المختارة قبل المتابعة؛ وإلا فقد تخسر أصولك."
   },
+  "wallet_extension_switch_drawer_title_inconsistent": {
+    "message": "Current wallet account doesn’t match the {DApp} account"
+  },
   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
     "message": "{chainSymbol} غير كافٍ لدفع رسوم الشبكة"
   },
@@ -8120,6 +8171,9 @@
   "wallet_extension_home_text_add_multiple": {
     "message": "يمكنك إضافة حسابات متعددة للمحفظة دفعة واحدة"
   },
+  "wallet_extension_ton_select_ton_wallet": {
+    "message": "TON wallet"
+  },
   "wallet_extension_transfer_text_phishing_risk": {
     "message": "{address} تم الإبلاغ عنه كمحاولة تصيّد. يُرجى الحذر من محاولات التصيّد المحتملة."
   },
@@ -8232,7 +8286,7 @@
     "message": "شبكة مخصصة"
   },
   "extension_defi_errortip_not_enough_btc_icu": {
-    "message": "You have insufficient {chainName} balance for network fee."
+    "message": "ليس لديك رصيد كافٍ من {chainName} لسداد رسوم الشبكة."
   },
   "wallet_extension_history_list_revoke_approval": {
     "message": "إلغاء الموافقة على {symbol}"
@@ -8466,7 +8520,7 @@
     "message": "الأسئلة الشائعة"
   },
   "extension_defi_popup_title_btc_address_type_icu": {
-    "message": "{chainName} address type"
+    "message": "نوع عنوان {chainName}"
   },
   "extension_wallet_contractual_interaction_wallet_unavailable": {
     "message": "لا تدعم محفظتك الحالية هذه المعاملة. يُرجى تبديل المحفظة والمحاولة مرة أخرى"
