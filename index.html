@@ -182,6 +182,7 @@
         <h2>Buttons</h2>
         <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
         <button onclick="toggleMainButton();">Toggle Main Button</button>
+        <button onclick="toggleSecondaryButton();">Toggle Secondary Button</button>
       </div>
 
       <div class="section">
@@ -252,6 +253,15 @@
         Telegram.WebApp.showAlert('Main Button was clicked')
       })
       Telegram.WebApp.MainButton.show()
+
+      // Function to toggle main TWA button
+      function toggleSecondaryButton() {
+        if (Telegram.WebApp.SecondaryButton.isVisible) {
+          Telegram.WebApp.SecondaryButton.hide()
+        } else {
+          Telegram.WebApp.SecondaryButton.show()
+        }
+      }
 
       // 检查 IndexedDB 支持
       function checkIndexedDBSupport() {
