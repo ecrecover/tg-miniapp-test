@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram Mini App Buttons Demo</title>
+</head>
+<body>
+  <h1>Telegram Mini App Buttons Demo</h1>
+  <p>点击主按钮和次要按钮以测试。</p>
+
+  <script>
+    // Telegram Mini App SDK 初始化
+    const tg = window.Telegram.WebApp;
+    tg.expand(); // 全屏模式
+
+    // 主按钮（Main Button）配置
+    tg.MainButton.text = "点击这里 - 主按钮";
+    tg.MainButton.isVisible = true;
+    tg.MainButton.color = "#34a853"; // 设置主按钮颜色（可选）
+    tg.MainButton.onClick(() => {
+      tg.showAlert("你点击了主按钮！");
+    });
+
+    // 次要按钮（Secondary Button）配置
+    const secondaryButton = document.createElement("button");
+    secondaryButton.innerText = "点击这里 - 次要按钮";
+    secondaryButton.style.position = "absolute";
+    secondaryButton.style.bottom = "100px";
+    secondaryButton.style.left = "50%";
+    secondaryButton.style.transform = "translateX(-50%)";
+    secondaryButton.style.padding = "10px 20px";
+    secondaryButton.style.backgroundColor = "#fbbc05";
+    secondaryButton.style.color = "#fff";
+    secondaryButton.style.border = "none";
+    secondaryButton.style.borderRadius = "5px";
+    secondaryButton.style.cursor = "pointer";
+    secondaryButton.addEventListener("click", () => {
+      tg.showAlert("你点击了次要按钮！");
+    });
+    document.body.appendChild(secondaryButton);
+
+    // 检查 Telegram Mini App 环境
+    if (!tg) {
+      alert("请在 Telegram Mini App 环境中测试此页面！");
+    }
+  </script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</body>
+</html>
